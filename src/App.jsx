@@ -3,8 +3,12 @@ import './App.css'
 
 //pages
 import Home from './Pages/Home';
+import LandingPage from "./Pages/LandingPage";
+import About from "./Pages/About";
+
+//commons
 import Navbar from "./Commons/Navbar";
-import Footer from './Commons/Footer'
+import Footer from './Commons/Footer';
 
 
 
@@ -16,7 +20,9 @@ function App() {
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route element={<Home /> } path='/' />
+        <Route element={<LandingPage />} path='/' />
+        <Route element={<About />} path='/aboutme' />
+        <Route element={<Home /> } path='/inventory' />
       </Routes>
       <Footer />
     </BrowserRouter>
