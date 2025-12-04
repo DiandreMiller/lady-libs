@@ -1,10 +1,12 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './App.css'
 
 //pages
-// @ts-ignore
-import Home from './pages/Home';
+import Home from './Pages/Home';
+import Navbar from "./Commons/Navbar";
+import Footer from './Commons/Footer'
+
+
 
 
 function App() {
@@ -12,9 +14,11 @@ function App() {
 
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route element={<Home /> } path='/' />
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   )
