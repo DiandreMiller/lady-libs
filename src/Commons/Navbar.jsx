@@ -8,7 +8,7 @@ const Navbar = () => {
   const navItems = [
     { label: "Home", to: "/" },
     { label: "Shop", to: "/inventory" },
-    { label: "About Me", to: "/aboutus" },
+    { label: "About Me", to: "/aboutme" },
   ];
 
   const isActive = (to) => pathname === to;
