@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
+import LadyLibsLogo from '../assets/LadyLibsLogo.png';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -18,8 +19,10 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/90 shadow-md shadow-purple-900/40">
-            <span className="text-lg font-bold text-yellow-100">LL</span>
+          <div className="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-500/90 shadow-md shadow-purple-900/40">
+            <span>
+                <img src={LadyLibsLogo} alt="Lady Libs"  />
+            </span>
           </div>
           <h1 className="text-xl font-extrabold text-yellow-50 tracking-wide">
             Lady Libs

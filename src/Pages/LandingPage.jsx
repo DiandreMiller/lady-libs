@@ -1,3 +1,5 @@
+import LadyLibsLogo from '../assets/LadyLibsLogo.png';
+
 const LandingPage = () => {
     return (
       <div className="min-h-screen w-full bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-yellow-50 mt-12">
@@ -10,11 +12,12 @@ const LandingPage = () => {
   
         {/* Main content */}
         <div className="relative flex min-h-screen flex-col">
-          {/* Top bar (simple brand strip – not your global navbar) */}
           <header className="flex items-center justify-between px-6 py-5 sm:px-10">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/90 shadow-lg shadow-purple-950/60">
-                <span className="text-lg font-extrabold text-purple-950">LL</span>
+              <div className="flex h-12 w-12 items-center justify-center rounded-full ">
+                <span>
+                  <img src={LadyLibsLogo} alt="Lady Libs Logo" />
+                </span>
               </div>
               <div>
                 <p className="text-sm font-semibold tracking-[0.18em] uppercase text-yellow-100/80">
