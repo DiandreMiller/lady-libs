@@ -2,10 +2,10 @@ import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-route
 import "./App.css";
 
 // pages
-import Home from "./Pages/Home";
-import LandingPage from "./Pages/LandingPage";
-import About from "./Pages/About";
-import FourOFour from "./Pages/FourOFour";
+import Home from "./Pages/Home.jsx";
+import LandingPage from "./Pages/LandingPage.jsx";
+import About from "./Pages/About.jsx";
+import FourOFour from "./Pages/FourOFour.jsx";
 
 // commons
 import Navbar from "./Commons/Navbar";
