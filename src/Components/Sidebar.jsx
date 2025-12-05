@@ -24,38 +24,22 @@ const Sidebar = () => {
     <aside
       className="
         hidden md:flex
-        h-[calc(100vh-4rem)]  /* adjust if your navbar height changes */
-        w-64
+        h-[calc(100vh-5rem)]       /* full height under navbar */
+        w-[22rem] lg:w-[26rem]               /* wide sidebar */
         flex-col
-        bg-purple-950/80
-        border-r border-purple-700/50
+        bg-purple-950/90
+        border-r border-purple-800/60
         text-yellow-50
         backdrop-blur-xl
-        sticky top-16
+        sticky top-20              /* sticks under navbar */
         shadow-xl shadow-purple-950/60
       "
     >
-      {/* Brand header */}
-      <div className="px-5 pt-5 pb-4 border-b border-purple-700/50">
-        <div className="flex items-center gap-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-full bg-emerald-500/90 shadow-md shadow-purple-900/60">
-            <span className="text-sm font-bold text-purple-950">LL</span>
-          </div>
-          <div>
-            <p className="text-sm font-semibold tracking-wide">Lady Libs</p>
-            <p className="text-[11px] text-yellow-200/70">
-              Curated vintage &amp; home
-            </p>
-          </div>
-        </div>
-      </div>
-
-      {/* Scrollable content */}
-      <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
-
+      {/* Scrollable content (no logo/header bar) */}
+      <div className="flex-1 overflow-y-auto px-5 py-5 space-y-7">
         {/* Main navigation */}
         <nav className="space-y-1 text-sm">
-          <SidebarLink to="/" label="Home" active={isActive("/")} />
+          <SidebarLink to="/inventory" label="Home" active={isActive("/")} />
           <SidebarLink
             to="/inventory"
             label="Shop All"
@@ -66,10 +50,9 @@ const Sidebar = () => {
             label="About Lady Libs"
             active={isActive("/aboutme")}
           />
-          {/* Add more pages as you build them */}
         </nav>
 
-        {/* SHOP SECTION (collapsible) */}
+        {/* SHOP SECTION */}
         <SidebarSection
           title="Shop"
           isOpen={openSections.shop}
@@ -78,7 +61,10 @@ const Sidebar = () => {
           <div className="space-y-1 text-sm">
             <SidebarLink to="/inventory?sort=new" label="New Arrivals" />
             <SidebarLink to="/inventory?sort=popular" label="Best Sellers" />
-            <SidebarLink to="/inventory?filter=one-of-one" label="One-of-One Finds" />
+            <SidebarLink
+              to="/inventory?filter=one-of-one"
+              label="One-of-One Finds"
+            />
           </div>
         </SidebarSection>
 
@@ -111,13 +97,13 @@ const Sidebar = () => {
           </div>
         </SidebarSection>
 
-        {/* COLLECTIONS SECTION */}
+        {/* CURATED COLLECTIONS */}
         <SidebarSection
           title="Curated Collections"
           isOpen={openSections.collections}
           onToggle={() => toggleSection("collections")}
         >
-          <div className="space-y-1 text-sm">
+          <div className="space-y-1 text-sm text-left">
             <SidebarMiniLink label="Golden Hour Picks" />
             <SidebarMiniLink label="Cozy Home Vibes" />
             <SidebarMiniLink label="Bold &amp; Beautiful" />
@@ -125,25 +111,19 @@ const Sidebar = () => {
           </div>
         </SidebarSection>
 
-        {/* COLOR PALETTE SECTION */}
+        {/* COLOR PALETTE */}
         <SidebarSection
           title="Shop by Color"
           isOpen={openSections.colors}
           onToggle={() => toggleSection("colors")}
         >
           <div className="space-y-1 text-sm">
-            <SidebarColorPill label="Emerald Green" className="bg-emerald-500/70 text-yellow-50" />
-            <SidebarColorPill label="Sunset Orange" className="bg-orange-400/80 text-yellow-50" />
-            <SidebarColorPill label="Deep Purple" className="bg-purple-800/80 text-yellow-50" />
-            <SidebarColorPill label="Warm Gold" className="bg-yellow-400/80 text-yellow-50" />
+            <SidebarColorPill label="Emerald Green" className="bg-emerald-500/70" />
+            <SidebarColorPill label="Sunset Orange" className="bg-orange-400/80" />
+            <SidebarColorPill label="Deep Purple" className="bg-purple-800/80" />
+            <SidebarColorPill label="Warm Gold" className="bg-yellow-400/80" />
           </div>
         </SidebarSection>
-      </div>
-
-      {/* Small footer inside sidebar */}
-      <div className="px-4 pb-4 pt-3 border-t border-purple-700/50 text-[11px] text-yellow-200/75">
-        <p>© {new Date().getFullYear()} Lady Libs.</p>
-        <p className="text-yellow-200/60">Curated with love, one piece at a time.</p>
       </div>
     </aside>
   );
@@ -169,28 +149,24 @@ const SidebarLink = ({ to, label, active }) => {
   );
 };
 
-const SidebarSection = ({ title, isOpen, onToggle, children }) => {
-  return (
-    <div>
-      <button
-        type="button"
-        onClick={onToggle}
-        className="
-          flex w-full items-center justify-between
-          text-xs font-semibold uppercase tracking-[0.18em]
-          text-yellow-200/80
-        "
-      >
-        <span>{title}</span>
-        <span className="text-[10px]">
-          {isOpen ? "−" : "+"}
-        </span>
-      </button>
+const SidebarSection = ({ title, isOpen, onToggle, children }) => (
+  <div>
+    <button
+      type="button"
+      onClick={onToggle}
+      className="
+        flex w-full items-center justify-between
+        text-xs font-semibold uppercase tracking-[0.18em]
+        text-yellow-200/80
+      "
+    >
+      <span className="text-left">{title}</span>
+      <span className="text-[10px]">{isOpen ? "−" : "+"}</span>
+    </button>
 
-      {isOpen && <div className="mt-2 space-y-1">{children}</div>}
-    </div>
-  );
-};
+    {isOpen && <div className="mt-2 space-y-1">{children}</div>}
+  </div>
+);
 
 const SectionLabel = ({ children, className = "" }) => (
   <p className={`text-[11px] font-semibold text-yellow-200/80 ${className}`}>
@@ -217,14 +193,14 @@ const SidebarColorPill = ({ label, className = "" }) => (
     className={`
       flex w-full items-center justify-between
       rounded-full px-3 py-1.5 text-[12px]
-      text-purple-950 font-semibold
+      text-yellow-50 font-semibold
       shadow-sm shadow-purple-900/60
       hover:brightness-110 transition
       ${className}
     `}
   >
     <span>{label}</span>
-    <span className="h-2.5 w-2.5 rounded-full bg-purple-950/60" />
+    <span className="h-2.5 w-2.5 rounded-full bg-yellow-100/80" />
   </button>
 );
 
