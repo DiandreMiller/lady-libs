@@ -1,5 +1,6 @@
 // import { Facebook, Mail, ArrowUp } from "lucide-react";
 import { InstagramLogo, DeviceMobile, FacebookLogo, TiktokLogo } from "phosphor-react";
+import LadyLibsLogo from '../assets/LadyLibsLogo.png';
 
 const Footer = () => {
     const socials = [
@@ -22,7 +23,7 @@ const Footer = () => {
             <div className="space-y-3 md:col-span-1 text-center md:text-left">
               <div className="flex items-center justify-center gap-3 md:justify-start">
                 <div className="flex h-10 w-10 items-center justify-center rounded-full bg-emerald-500/90 shadow-md shadow-purple-900/60">
-                  <span className="text-lg font-bold text-yellow-100">LL</span>
+                  <span className="text-lg font-bold text-yellow-100"><img src={LadyLibsLogo} alt="Lady Libs Logo" /></span>
                 </div>
                 <span className="text-xl font-extrabold tracking-wide">
                   Lady Libs
