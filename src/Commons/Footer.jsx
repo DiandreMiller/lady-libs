@@ -1,8 +1,11 @@
+// import { Facebook, Mail, ArrowUp } from "lucide-react";
+import { InstagramLogo, DeviceMobile, FacebookLogo, TiktokLogo } from "phosphor-react";
+
 const Footer = () => {
     const socials = [
-      { label: "Instagram", short: "IG" },
-      { label: "TikTok", short: "TT" },
-      { label: "Facebook", short: "Fb" },
+      { label: "Instagram", short: <InstagramLogo size={22} /> },
+      { label: "TikTok", short: <TiktokLogo size={22} /> },
+      { label: "Facebook", short: <FacebookLogo size={22} /> },
     ];
   
     return (
@@ -53,7 +56,7 @@ const Footer = () => {
                   />
                   <button
                     type="submit"
-                    className="whitespace-nowrap bg-emerald-500 px-4 text-xs font-semibold text-purple-950 hover:bg-emerald-400 transition"
+                    className="whitespace-nowrap bg-emerald-500 px-4 text-xs font-semibold text-red-200 hover:bg-emerald-400 transition"
                   >
                     Join
                   </button>
@@ -74,7 +77,7 @@ const Footer = () => {
                       text-[11px] font-semibold text-yellow-100
                       shadow-md shadow-purple-900/60
                       transition
-                      hover:bg-orange-400 hover:text-purple-950
+                      hover:bg-orange-400 hover:text-red-200
                       hover:-translate-y-1 hover:rotate-3 hover:scale-105
                     "
                   >
