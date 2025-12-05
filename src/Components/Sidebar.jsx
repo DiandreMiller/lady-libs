@@ -39,7 +39,7 @@ const Sidebar = () => {
       <div className="flex-1 overflow-y-auto px-5 py-5 space-y-7">
         {/* Main navigation */}
         <nav className="space-y-1 text-sm">
-          <SidebarLink to="/inventory" label="Home" active={isActive("/")} />
+          {/* <SidebarLink to="/inventory" label="Home" active={isActive("/")} /> */}
           <SidebarLink
             to="/inventory"
             label="Shop All"
