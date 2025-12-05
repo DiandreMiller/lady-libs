@@ -6,7 +6,7 @@ import Sidebar from "../Components/Sidebar";
 
 export function DefaultLayout() {
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-gradient-to-b from-purple-950 via-purple-900 to-purple-950">
       <Navbar />
 
       {/* Main area: sidebar + page content */}
