@@ -41,20 +41,22 @@ function App() {
     <BrowserRouter>
       <CartProvider>
         <Navbar />
-        <Routes>
-          {/* Landing pages WITHOUT default layout */}
-          <Route element={<BareLayout />}>
-            <Route element={<LandingPage />} path="/" />
-          </Route>
+        <div className="pt-24 sm:pt-20">
+          <Routes>
+            {/* Landing pages WITHOUT default layout */}
+            <Route element={<BareLayout />}>
+              <Route element={<LandingPage />} path="/" />
+            </Route>
 
-          {/* Everything else WITH default layout */}
-          <Route element={<DefaultLayout />}>
-            <Route element={<About />} path="/aboutme" />
-            <Route element={<Cart />} path='/cart' />
-            <Route element={<Home />} path="/inventory" />
-            <Route element={<AliasRouter />} path="*" />
-          </Route>
-        </Routes>
+            {/* Everything else WITH default layout */}
+            <Route element={<DefaultLayout />}>
+              <Route element={<About />} path="/aboutme" />
+              <Route element={<Cart />} path='/cart' />
+              <Route element={<Home />} path="/inventory" />
+              <Route element={<AliasRouter />} path="*" />
+            </Route>
+          </Routes>
+        </div>
         {/* <Footer /> */}
       </CartProvider>
     </BrowserRouter>
