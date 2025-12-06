@@ -137,8 +137,9 @@ const Cart = () => {
             </div>
 
             <div className="flex justify-center">
-              <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-3xl bg-purple-900/60 border border-purple-700/60 shadow-[0_25px_90px_rgba(0,0,0,0.75)] flex items-center justify-center overflow-hidden">
+              <div className="w-56 h-56 sm:w-72 sm:h-72 rounded-3xl bg-purple-900/60 border border-purple-700/60 shadow-[0_25px_90px_rgba(0,0,0,0.75)] flex items-center justify-center overflow-hidden hover:scale-110 cursor-pointer">
                 <img
+                  onClick={() => navigate("/inventory")}
                   src={EmptyCart}
                   alt="Lady Libs empty cart illustration"
                   className="w-full h-full object-contain"
