@@ -7,6 +7,7 @@ import LandingPage from "./Pages/LandingPage.jsx";
 import About from "./Pages/About.jsx";
 import FourOFour from './Pages/FourOFour.jsx';
 import Cart from "./Pages/Cart.jsx";
+import ContactMe from "./Pages/ContactMe.jsx";
 
 // commons
 import Navbar from "./Commons/Navbar";
@@ -52,6 +53,7 @@ function App() {
             <Route element={<DefaultLayout />}>
               <Route element={<About />} path="/aboutme" />
               <Route element={<Cart />} path='/cart' />
+              <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
               <Route element={<AliasRouter />} path="*" />
             </Route>
