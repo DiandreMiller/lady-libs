@@ -25,7 +25,7 @@ const Navbar = () => {
             <img
               src={LadyLibsLogo}
               alt="Lady Libs"
-              className="h-11 w-11 object-cover"
+              className="h-11 w-11 object-cover cursor:pointer"
             />
           </div>
           <h1 className="text-xl font-extrabold text-yellow-50 tracking-wide">
@@ -71,15 +71,6 @@ const Navbar = () => {
             <span className="text-purple-900 font-semibold">
               Cart
             </span>
-          </button>
-
-          {/* Mobile Cart Icon */}
-          <button
-            onClick={() => navigate("/cart")}
-            className="sm:hidden flex items-center justify-center h-9 w-9 rounded-full bg-yellow-100/90 text-purple-900 shadow-md shadow-purple-900/50 hover:brightness-110 active:scale-95 transition"
-            aria-label="Open cart"
-          >
-            <ShoppingCart size={18} />
           </button>
 
           {/* Mobile Menu Button */}
