@@ -10,7 +10,7 @@ export function DefaultLayout() {
       <Navbar />
 
       {/* Main area: sidebar + page content */}
-      <main className="flex-1 pt-24 sm:pt-20">
+      <main className="flex-1 pt-20">
         <div className="flex">
           {/* Desktop sidebar (hidden on mobile inside component) */}
           <Sidebar />
