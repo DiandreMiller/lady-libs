@@ -8,6 +8,7 @@ import About from "./Pages/About.jsx";
 import FourOFour from './Pages/FourOFour.jsx';
 import Cart from "./Pages/Cart.jsx";
 import ContactMe from "./Pages/ContactMe.jsx";
+import EmailSent from "./Pages/EmailSent.jsx";
 
 // commons
 import Navbar from "./Commons/Navbar";
@@ -55,6 +56,7 @@ function App() {
               <Route element={<Cart />} path='/cart' />
               <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
+              <Route element={<EmailSent />} path='/emailsent' />
               <Route element={<AliasRouter />} path="*" />
             </Route>
           </Routes>
