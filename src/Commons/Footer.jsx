@@ -114,8 +114,8 @@ const Footer = () => {
               <p>© {new Date().getFullYear()} Lady Libs. All rights reserved.</p>
     
               <div className="flex gap-4">
-                <button onClick={navigate('/privacy')} className="hover:text-white transition">Privacy Policy</button>
-                <button onClick={navigate('/terms')} className="hover:text-white transition">Terms</button>
+                <button onClick={() => navigate('/privacy')} className="hover:text-white transition">Privacy Policy</button>
+                <button onClick={() => navigate('/terms')} className="hover:text-white transition">Terms</button>
               </div>
             </div>
           </div>
