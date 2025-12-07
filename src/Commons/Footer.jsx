@@ -1,10 +1,13 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import { InstagramLogo, DeviceMobile, FacebookLogo, TiktokLogo } from "phosphor-react";
 import LadyLibsLogo from '../assets/LadyLibsLogo.png';
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);
+
+  const navigate = useNavigate();
 
    // Show scroll-to-top button after scrolling down
    useEffect(() => {
@@ -111,8 +114,8 @@ const Footer = () => {
               <p>© {new Date().getFullYear()} Lady Libs. All rights reserved.</p>
     
               <div className="flex gap-4">
-                <button className="hover:text-white transition">Privacy Policy</button>
-                <button className="hover:text-white transition">Terms</button>
+                <button onClick={navigate('/privacy')} className="hover:text-white transition">Privacy Policy</button>
+                <button onClick={navigate('/terms')} className="hover:text-white transition">Terms</button>
               </div>
             </div>
           </div>
