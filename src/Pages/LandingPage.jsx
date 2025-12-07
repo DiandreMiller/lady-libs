@@ -1,4 +1,5 @@
 import LadyLibsLogo from '../assets/LadyLibsLogo.png';
+import AllVintageItems from '../assets/AllVintageItems.png';
 
 const LandingPage = () => {
     return (
@@ -131,8 +132,26 @@ const LandingPage = () => {
                   </div>
   
                   {/* big “photo” block */}
-                  <div className="mb-4 h-48 rounded-2xl bg-gradient-to-br from-emerald-600 via-purple-800 to-orange-500 shadow-lg shadow-purple-950/70" />
-  
+                  <div
+                    className="
+                      mb-4 h-48 rounded-2xl
+                      bg-gradient-to-br from-emerald-600 via-purple-800 to-orange-500
+                      shadow-lg shadow-purple-950/70
+                      flex items-center justify-center
+                      overflow-hidden
+                    "
+                  >
+                    <img
+                      src={AllVintageItems}
+                      alt="Tonight's curated vintage selection"
+                      className="
+                        h-full w-full object-contain
+                        drop-shadow-xl
+                        transition-transform duration-300
+                        hover:scale-105
+                      "
+                    />
+                  </div>
                   {/* featured items list */}
                   <div className="space-y-3 text-xs">
                     <div className="flex items-center justify-between gap-3 rounded-2xl bg-purple-900/80 px-3 py-3">
