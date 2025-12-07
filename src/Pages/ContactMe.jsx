@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import DOMPurify from "dompurify";
 import LadyLibsContactMe from "../assets/LadyLibsContactMe.png";
 
+const encode = (data) =>
+  new URLSearchParams(data).toString();
+
 const ContactMe = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -16,7 +19,7 @@ const ContactMe = () => {
     return () => clearTimeout(t);
   }, []);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!name || !email || !message) {
@@ -24,12 +27,23 @@ const ContactMe = () => {
       return;
     }
 
-    // placeholder – wire to backend or email service later
-    // alert("Message sent! 💜 I’ll be in touch soon.");
-    // setName("");
-    // setEmail("");
-    // setMessage("");
-    navigate('/emailsent');
+    try {
+      await fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({
+          "form-name": "contact",
+          name,
+          email,
+          message,
+        }),
+      });
+
+      navigate("/emailsent");
+    } catch (err) {
+      console.error(err);
+      alert("Something went wrong sending your message. Please try again.");
+    }
   };
 
   return (
@@ -44,7 +58,6 @@ const ContactMe = () => {
       >
         {/* LEFT: copy + form */}
         <div className="flex-1 max-w-3xl">
-          {/* Header */}
           <header className="mb-8 max-w-2xl">
             <p className="text-xs tracking-[0.35em] uppercase text-yellow-200/70">
               Reach Out
@@ -58,11 +71,22 @@ const ContactMe = () => {
             </p>
           </header>
 
-          {/* Form */}
           <form
             onSubmit={handleSubmit}
+            name="contact"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
             className="mt-4 grid gap-5 sm:grid-cols-2"
           >
+            {/* required hidden field for Netlify */}
+            <input type="hidden" name="form-name" value="contact" />
+            {/* optional honeypot */}
+            <p className="hidden">
+              <label>
+                Don’t fill this out: <input name="bot-field" />
+              </label>
+            </p>
+
             {/* Name */}
             <label className="block">
               <span className="mb-2 block text-sm text-yellow-100/85">
@@ -70,6 +94,7 @@ const ContactMe = () => {
               </span>
               <input
                 type="text"
+                name="name"
                 value={name}
                 onChange={(e) => setName(DOMPurify.sanitize(e.target.value))}
                 placeholder="Jane Doe"
@@ -93,8 +118,11 @@ const ContactMe = () => {
               </span>
               <input
                 type="email"
+                name="email"
                 value={email}
-                onChange={(e) => setEmail(DOMPurify.sanitize(e.target.value))}
+                onChange={(e) =>
+                  setEmail(DOMPurify.sanitize(e.target.value))
+                }
                 placeholder="you@example.com"
                 className="
                   w-full rounded-xl
@@ -115,6 +143,7 @@ const ContactMe = () => {
                 Your Message
               </span>
               <textarea
+                name="message"
                 value={message}
                 onChange={(e) =>
                   setMessage(DOMPurify.sanitize(e.target.value))
@@ -135,7 +164,6 @@ const ContactMe = () => {
               />
             </label>
 
-            {/* Submit */}
             <div className="sm:col-span-2 flex items-center justify-between gap-4 mt-2">
               <p className="text-xs text-yellow-200/70">
                 I usually respond within 24–48 hours.
@@ -166,7 +194,6 @@ const ContactMe = () => {
         {/* RIGHT: illustration (desktop only) */}
         <div className="hidden md:flex flex-1 justify-end">
           <div className="relative w-72 max-w-sm">
-            {/* Glow behind illustration */}
             <div
               className="pointer-events-none absolute inset-0 rounded-3xl bg-emerald-400/25 blur-3xl"
               aria-hidden="true"
