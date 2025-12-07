@@ -9,6 +9,9 @@ import FourOFour from './Pages/FourOFour.jsx';
 import Cart from "./Pages/Cart.jsx";
 import ContactMe from "./Pages/ContactMe.jsx";
 import EmailSent from "./Pages/EmailSent.jsx";
+import PrivacyPolicy from './Pages/Legal.jsx'
+import TermsAndConditions from "./Pages/TermsAndConditions.jsx"; 
+
 
 // commons
 import Navbar from "./Commons/Navbar";
@@ -33,6 +36,8 @@ function AliasRouter() {
     redirectIf("contactme", "contactme") ||
     redirectIf("emailsent", "emailsent") ||
     redirectIf("inventory", "inventory") ||
+    redirectIf("privacy", "privacy") ||
+    redirectIf("terms", "terms") ||
     redirectIf("product", pathname) ||
     <FourOFour />
   );
@@ -57,6 +62,8 @@ function App() {
               <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
               <Route element={<EmailSent />} path='/emailsent' />
+              <Route element={<PrivacyPolicy />} path='/privacy' />
+              <Route element={<TermsAndConditions />} path="/terms" />
               <Route element={<AliasRouter />} path="*" />
             </Route>
           </Routes>
