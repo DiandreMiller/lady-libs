@@ -4,6 +4,7 @@ import GoldenHoopEarrings from '../assets/GoldenHoopEarrings.png';
 import SunsetSilkScarf from '../assets/SunsetSilkScarf.png';
 import VintageCamera from '../assets/VintageCamera.png';
 import VintageVinylRecord from '../assets/VintageVynlRecord.png';
+import EmeraldLamp from '../assets/EmeraldLamp.png';
 
 const inventory = [
   { id: 1, name: "Emerald Velvet Armchair", price: "$180", tag: "New Arrival", category: "Furniture", img: EmeraldGreenChair },
@@ -72,6 +73,8 @@ const Home = () => {
               <p className="text-xs text-orange-100 mt-1">
                 Deep green base & warm golden glow.
               </p>
+
+              <img className="mt-4 w-full h-40 object-contain drop-shadow-xl" src={EmeraldLamp} alt='emerald lamp' />
   
               <div className="mt-4 flex justify-between">
                 <span className="font-bold">$120</span>
