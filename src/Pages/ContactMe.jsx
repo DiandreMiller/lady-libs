@@ -72,10 +72,11 @@ const ContactMe = () => {
           </header>
 
           <form
-            onSubmit={handleSubmit}
             name="contact"
+            method="POST"
             data-netlify="true"
             netlify-honeypot="bot-field"
+            onSubmit={handleSubmit}
             className="mt-4 grid gap-5 sm:grid-cols-2"
           >
             {/* required hidden field for Netlify */}
