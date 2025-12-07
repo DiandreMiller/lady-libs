@@ -13,6 +13,8 @@ import PrivacyPolicy from './Pages/Legal.jsx'
 import TermsAndConditions from "./Pages/TermsAndConditions.jsx"; 
 
 
+//TODO: Fix names around items
+
 // commons
 import Navbar from "./Commons/Navbar";
 // import Footer from "./Commons/Footer"; 
