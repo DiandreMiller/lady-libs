@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import DOMPurify from "dompurify";
 import LadyLibsContactMe from "../assets/LadyLibsContactMe.png";
 
@@ -6,6 +7,14 @@ const ContactMe = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [canSubmit, setCanSubmit] = useState(false);
+
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const t = setTimeout(() => setCanSubmit(true), 3000);
+    return () => clearTimeout(t);
+  }, []);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -16,10 +25,11 @@ const ContactMe = () => {
     }
 
     // placeholder – wire to backend or email service later
-    alert("Message sent! 💜 I’ll be in touch soon.");
-    setName("");
-    setEmail("");
-    setMessage("");
+    // alert("Message sent! 💜 I’ll be in touch soon.");
+    // setName("");
+    // setEmail("");
+    // setMessage("");
+    navigate('/emailsent');
   };
 
   return (
@@ -133,6 +143,8 @@ const ContactMe = () => {
 
               <button
                 type="submit"
+                disabled={!canSubmit}
+                aria-disabled={!canSubmit}
                 className="
                   rounded-full
                   bg-gradient-to-r from-emerald-400 to-emerald-300
@@ -145,7 +157,7 @@ const ContactMe = () => {
                   transition
                 "
               >
-                Send Message
+                {canSubmit ? "Send Message" : "Please Wait"}
               </button>
             </div>
           </form>
