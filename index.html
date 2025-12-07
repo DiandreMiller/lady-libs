@@ -66,6 +66,16 @@
 
   <body>
     <div id="root"></div>
+    <!-- Netlify form for static hosting -->
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" hidden>
+       <!-- required for Netlify to know the form name on POST -->
+      <input type="hidden" name="form-name" value="contact" />
+      <!-- honeypot field -->
+      <input type="hidden" name="bot-field" />
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
