@@ -13,8 +13,6 @@ const inventory = [
   { id: 4, name: "Sunset Silk Scarf", price: "$42", tag: "Best Seller", category: "Accessories", img: SunsetSilkScarf },
   { id: 5, name: "Retro Camera", price: "$95", tag: "One of One", category: "Decor", img: VintageCamera },
   { id: 6, name: "Vintage Vinyl Record", price: "$25", tag: "Classic", category: "Music", img: VintageVinylRecord },
-  
-  
 ];
 
 const Home = () => {
