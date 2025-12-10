@@ -78,7 +78,7 @@ const Sidebar = () => {
             <SectionLabel>Clothing</SectionLabel>
             <SidebarMiniLink label="Dresses" />
             <SidebarMiniLink label="Tops" />
-            <SidebarMiniLink label="Skirts" />
+            <Link to='/inventory/skirts'><SidebarMiniLink label="Skirts" /></Link> 
             <SidebarMiniLink label="Jackets" />
             <SidebarMiniLink label="Pants" />
             <SidebarMiniLink label="Sweaters" />

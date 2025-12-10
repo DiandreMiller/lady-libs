@@ -10,6 +10,7 @@ import Cart from "./Pages/Cart.jsx";
 import ContactMe from "./Pages/ContactMe.jsx";
 import EmailSent from "./Pages/EmailSent.jsx";
 import PrivacyPolicy from './Pages/Legal.jsx'
+import Skirts from "./Pages/Skirts.jsx";
 import TermsAndConditions from "./Pages/TermsAndConditions.jsx"; 
 
 
@@ -38,6 +39,7 @@ function AliasRouter() {
     redirectIf("contactme", "contactme") ||
     redirectIf("emailsent", "emailsent") ||
     redirectIf("inventory", "inventory") ||
+    redirectIf("inventory/skirts", "inventory/skirts") ||
     redirectIf("privacy", "privacy") ||
     redirectIf("terms", "terms") ||
     redirectIf("product", pathname) ||
@@ -63,6 +65,7 @@ function App() {
               <Route element={<Cart />} path='/cart' />
               <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
+              <Route element={<Skirts />} path='/inventory/skirts' />
               <Route element={<EmailSent />} path='/emailsent' />
               <Route element={<PrivacyPolicy />} path='/privacy' />
               <Route element={<TermsAndConditions />} path="/terms" />
