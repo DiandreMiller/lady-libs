@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
-import LadyLibsLogo from "../assets/LadyLibsLogo.png";
+import LadyLibsLogo from "../assets/LadyLibsImages/LadyLibsLogo.png";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

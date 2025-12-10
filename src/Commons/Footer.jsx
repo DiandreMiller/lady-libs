@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { ArrowUp } from "lucide-react";
 import { InstagramLogo, DeviceMobile, FacebookLogo, TiktokLogo } from "phosphor-react";
-import LadyLibsLogo from '../assets/LadyLibsLogo.png';
+import LadyLibsLogo from '../assets/LadyLibsImages/LadyLibsLogo.png';
 
 const Footer = () => {
   const [showScroll, setShowScroll] = useState(false);

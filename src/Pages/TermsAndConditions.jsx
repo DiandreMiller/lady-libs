@@ -1,4 +1,4 @@
-import LadyLibsTermsAndConditions from '../assets/LadyLibsTermsAndConditions.png';
+import LadyLibsTermsAndConditions from '../assets/LadyLibsImages/LadyLibsTermsAndConditions.png';
 
 const TermsAndConditions = () => {
   return (

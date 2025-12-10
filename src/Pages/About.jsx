@@ -1,4 +1,4 @@
-import LadyLibs from '../assets/LadyLibs.png';
+import LadyLibs from '../assets/LadyLibsImages/LadyLibs.png';
 
 const About = () => {
   return (
