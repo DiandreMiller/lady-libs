@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import KissingFace from "../assets/KissingFace.png";
+import KissingFace from "../assets/LadyLibsImages/KissingFace.png";
 
 const FourOFour = () => {
   return (

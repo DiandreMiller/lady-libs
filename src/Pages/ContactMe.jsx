@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import DOMPurify from "dompurify";
-import LadyLibsContactMe from "../assets/LadyLibsContactMe.png";
+import LadyLibsContactMe from "../assets/LadyLibsImages/LadyLibsContactMe.png";
 
 const encode = (data) =>
   new URLSearchParams(data).toString();

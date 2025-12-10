@@ -1,4 +1,4 @@
-import LadyLibsPrivacy from "../assets/LadyLibsPrivacy.png";
+import LadyLibsPrivacy from "../assets/LadyLibsImages/LadyLibsPrivacy.png";
 
 const PrivacyPolicy = () => {
   return (

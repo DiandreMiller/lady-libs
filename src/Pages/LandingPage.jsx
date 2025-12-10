@@ -1,4 +1,4 @@
-import LadyLibsLogo from '../assets/LadyLibsLogo.png';
+import LadyLibsLogo from '../assets/LadyLibsImages/LadyLibsLogo.png';
 import AllVintageItems from '../assets/AllVintageItems.png';
 
 const LandingPage = () => {
