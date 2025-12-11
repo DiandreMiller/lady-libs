@@ -4,6 +4,7 @@ import "./App.css";
 // pages
 import Dresses from "./Pages/Dresses.jsx";
 import Home from "./Pages/Home.jsx";
+import Jackets from "./Pages/Jackets.jsx";
 import LandingPage from "./Pages/LandingPage.jsx";
 import About from "./Pages/About.jsx";
 import FourOFour from './Pages/FourOFour.jsx';
@@ -40,8 +41,9 @@ function AliasRouter() {
     redirectIf("contactme", "contactme") ||
     redirectIf("emailsent", "emailsent") ||
     redirectIf("inventory", "inventory") ||
-    redirectIf("inventory/skirts", "inventory/skirts") ||
     redirectIf("inventory/dresses", "inventory/dresses") ||
+    redirectIf("inventory/jackets", "inventory/jackets") ||
+    redirectIf("inventory/skirts", "inventory/skirts") ||
     redirectIf("privacy", "privacy") ||
     redirectIf("terms", "terms") ||
     redirectIf("product", pathname) ||
@@ -68,6 +70,7 @@ function App() {
               <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
               <Route element={<Dresses />} path='/inventory/dresses' />
+              <Route element={<Jackets />} path='/inventory/jackets' />
               <Route element={<Skirts />} path='/inventory/skirts' />
               <Route element={<EmailSent />} path='/emailsent' />
               <Route element={<PrivacyPolicy />} path='/privacy' />

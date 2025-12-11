@@ -79,7 +79,7 @@ const Sidebar = () => {
             <Link to='/inventory/dresses'><SidebarMiniLink label="Dresses" /></Link>
             <SidebarMiniLink label="Tops" />
             <Link to='/inventory/skirts'><SidebarMiniLink label="Skirts" /></Link> 
-            <SidebarMiniLink label="Jackets" />
+            <Link to='/inventory/jackets'><SidebarMiniLink label="Jackets" /></Link>
             <SidebarMiniLink label="Pants" />
             <SidebarMiniLink label="Sweaters" />
 
