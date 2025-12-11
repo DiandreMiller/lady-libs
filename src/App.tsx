@@ -15,8 +15,9 @@ import PrivacyPolicy from './Pages/Legal.jsx'
 import Skirts from "./Pages/Skirts.jsx";
 import TermsAndConditions from "./Pages/TermsAndConditions.jsx"; 
 
+//TODO:
 
-//TODO: Fix names around items
+// Do other mock items
 
 // commons
 import Navbar from "./Commons/Navbar";
