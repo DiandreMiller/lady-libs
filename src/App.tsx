@@ -26,6 +26,7 @@ import { CartProvider } from "./context/CartContext";
 
 // Layout
 import { DefaultLayout, BareLayout } from "./Components/Layout";
+import Tops from "./Pages/Tops.jsx";
 
 function AliasRouter() {
   const { pathname } = useLocation();
@@ -44,6 +45,7 @@ function AliasRouter() {
     redirectIf("inventory/dresses", "inventory/dresses") ||
     redirectIf("inventory/jackets", "inventory/jackets") ||
     redirectIf("inventory/skirts", "inventory/skirts") ||
+    redirectIf("inventory/tops", "inventory/tops") ||
     redirectIf("privacy", "privacy") ||
     redirectIf("terms", "terms") ||
     redirectIf("product", pathname) ||
@@ -72,6 +74,7 @@ function App() {
               <Route element={<Dresses />} path='/inventory/dresses' />
               <Route element={<Jackets />} path='/inventory/jackets' />
               <Route element={<Skirts />} path='/inventory/skirts' />
+              <Route element={<Tops />} path='/inventory/tops' />
               <Route element={<EmailSent />} path='/emailsent' />
               <Route element={<PrivacyPolicy />} path='/privacy' />
               <Route element={<TermsAndConditions />} path="/terms" />

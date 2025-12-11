@@ -77,7 +77,7 @@ const Sidebar = () => {
           <div className="space-y-1 text-sm pl-1">
             <SectionLabel>Clothing</SectionLabel>
             <Link to='/inventory/dresses'><SidebarMiniLink label="Dresses" /></Link>
-            <SidebarMiniLink label="Tops" />
+            <Link to='/inventory/tops'><SidebarMiniLink label="Tops" /></Link>
             <Link to='/inventory/skirts'><SidebarMiniLink label="Skirts" /></Link> 
             <Link to='/inventory/jackets'><SidebarMiniLink label="Jackets" /></Link>
             <SidebarMiniLink label="Pants" />
