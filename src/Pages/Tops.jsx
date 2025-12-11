@@ -1,25 +1,25 @@
-//Pages/Jackets.jsx
+//Pages/Tops.jsx
 
-//Vintage Jackets
-import VintageBlackAndWhiteStripedJacket from '../assets/VintageJackets/VintageBlackAndWhiteStripedJacket.png';
-import VintageBrownJacket from '../assets/VintageJackets/VintageBrownJacket.png';
-import VintageJeanJacket from '../assets/VintageJackets/VintageJeanJacket.png';
-import VintageNYCBlueVarsityJacket from '../assets/VintageJackets/VintageNYCBlueVarsityJacket.png';
-import VintageRedLeatherJacket from '../assets/VintageJackets/VintageRedLeatherJacket.png';
-import VintageYellowJacket from '../assets/VintageJackets/VintageYellowJacket.png';
+//Vintage Tops
+import BluePokadotTop from '../assets/VintageTops/BluePokadotTop.png';
+import CarnivalBrownTop from '../assets/VintageTops/CarnivalBrownTop.png';
+import PurpleRetroay2kTop from '../assets/VintageTops/PurpleRetroay2kTop.png';
+import VintageGoldenTop from '../assets/VintageTops/VintageGoldenTop.png';
+import WhiteRetroTop from '../assets/VintageTops/WhiteRetroTop.png';
+import Yellow1950BowTop from '../assets/VintageTops/Yellow1950BowTop.png';
 
 
-const vintageJackets = [
-    { id: 1, name: 'Vintage Black And White Striped Jacket', price: '$155', tag: 'New', category: 'Fashionable', color: 'White, Black', img: VintageBlackAndWhiteStripedJacket },
-    { id: 2, name: 'Vintage Brown Jacket', price: '$110', tag: 'Classic', category: 'Brown Leather Jacket', color: 'Brown', img: VintageBrownJacket },
-    { id: 3, name: 'Vintage Jean Jacket', price: '$123', tag: 'Limited', category: 'Jean Jacket', color: 'Blue', img: VintageJeanJacket },
-    { id: 4, name: 'Vintage NYC Blue Varsity Jacket', price: '$365', tag: 'New Drop', category: 'Varsity Jacket', color: 'Navy Blue', img: VintageNYCBlueVarsityJacket },
-    { id: 5, name: 'Vintage Red Leather Jacket', price: '$88', tag: 'Just In', category: 'Leather Jacket', color: 'Red', img: VintageRedLeatherJacket },
-    { id: 6, name: 'Vintage Yellow Jacket', price: '$104', tag: 'Festive', category: 'Jacket', color: 'Yellow', img: VintageYellowJacket },
+const vintageTops = [
+    { id: 1, name: 'Blue Pokadot Top', price: '$25', tag: 'New', category: 'Tops', color: 'Blue', img: BluePokadotTop },
+    { id: 2, name: 'Carnival Brown Top', price: '$10', tag: 'Classic', category: 'Tops', color: 'Brown', img: CarnivalBrownTop },
+    { id: 3, name: 'Purple Retroa Y2K Top', price: '$23', tag: 'Limited', category: 'Tops', color: 'Purple', img: PurpleRetroay2kTop },
+    { id: 4, name: 'Vintage Golden Top', price: '$35', tag: 'New Drop', category: 'Tops', color: 'Golden', img: VintageGoldenTop },
+    { id: 5, name: 'White Retro Top', price: '$18', tag: 'Just In', category: 'Tops', color: 'White', img: WhiteRetroTop },
+    { id: 6, name: 'Yellow 1950 Bow Top', price: '$44', tag: 'Festive', category: 'Tops', color: 'Yellow', img: Yellow1950BowTop },
   ];
 
 
-  const Jackets = () => {
+  const Tops = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -32,10 +32,10 @@ const vintageJackets = [
           {/* Header */}
           <section className="text-center mb-12">
             <h2 className="text-4xl sm:text-5xl font-extrabold tracking-tight text-yellow-50">
-              Lady Libs Jacket Collection
+              Lady Libs Top Collection
             </h2>
             <p className="mt-3 text-sm sm:text-base text-yellow-50/85 max-w-xl mx-auto">
-              Explore curated Jackets, soft vintage patterns, and timeless silhouettes.
+              Explore curated Tops, soft vintage patterns, and timeless silhouettes.
             </p>
           </section>
   
@@ -47,7 +47,7 @@ const vintageJackets = [
             </p>
   
             <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
-              {vintageJackets.map((item) => (
+              {vintageTops.map((item) => (
                 <div
                   key={item.id}
                   className="group rounded-2xl bg-purple-900/70 p-4 shadow-lg ring-1 ring-purple-800/70 transition hover:-translate-y-1 hover:ring-yellow-200/80"
@@ -83,7 +83,7 @@ const vintageJackets = [
   
             <div className="mt-6 flex justify-center">
               <button className="rounded-full border border-yellow-100/70 px-5 py-2 text-xs font-semibold hover:bg-purple-900/70 transition">
-                Load more Jackets
+                Load more Tops
               </button>
             </div>
           </section>
@@ -93,5 +93,5 @@ const vintageJackets = [
     );
   };
   
-  export default Jackets;
+  export default Tops;
   
