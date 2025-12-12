@@ -1,0 +1,16 @@
+import BlackAndRedFittedDress from '../assets/VintageJeans/BlackAndRedFittedDress.png';
+import LongBlueDress from '../assets/VintageJeans/LongBlueDress.png';
+import HalterYellowDress from '../assets/VintageJeans/HalterYellowDress.png';
+import PinkPokadotDress from '../assets/VintageJeans/PinkPokadotDress.png';
+import PinkSatinDress from '../assets/VintageJeans/PinkSatinDress.png';
+import TumericGingerManDress from '../assets/VintageJeans/TumericGingerManDress.png';
+
+
+const vintageDresses = [
+    { id: 1, name: 'Black And Red Fitted Dress', price: '$65', tag: 'New', category: 'Fitted Dress', color: 'Black/Red', img: BlackAndRedFittedDress },
+    { id: 2, name: 'Long Blue Dress', price: '$60', tag: 'Classic', category: 'Long Blue Dress', color: 'Blue', img: LongBlueDress },
+    { id: 3, name: 'Halter Yellow Dress', price: '$72', tag: 'Limited', category: 'Halter Yellow Dress', color: 'Yellow', img: HalterYellowDress },
+    { id: 4, name: 'Pink Pokadot Dress', price: '$66', tag: 'New Drop', category: 'Pink Flowy Dress', color: 'Pink', img: PinkPokadotDress },
+    { id: 5, name: 'Pink Satin Dress', price: '$48', tag: 'Just In', category: 'Satin', color: 'Pink', img: PinkSatinDress },
+    { id: 6, name: 'Tumeric Ginger Man Dress', price: '$64', tag: 'Festive', category: 'Festive', color: 'Brown', img: TumericGingerManDress },
+  ];
