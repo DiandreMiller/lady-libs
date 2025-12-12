@@ -1,6 +1,6 @@
 // src/Pages/EmailSent.tsx
 import { Link } from "react-router-dom";
-import LadyLibsEmailSent from "../assets/LadyLibsImages/LadyLibsEmailSent2.png";
+import LadyLibsEmailSent from "../assets/LadyLibsImages/LadyLibsEmailSent3.png";
 
 const EmailSent = () => (
   <>
