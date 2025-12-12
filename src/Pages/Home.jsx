@@ -1,10 +1,10 @@
-import EmeraldGreenChair from '../assets/EmeraldGreenChair.png';
-import ForestGreenWrapDress from '../assets/ForestGreenWrapDress.png';
-import GoldenHoopEarrings from '../assets/GoldenHoopEarrings.png';
-import SunsetSilkScarf from '../assets/SunsetSilkScarf.png';
-import VintageCamera from '../assets/VintageCamera.png';
-import VintageVinylRecord from '../assets/VintageVynlRecord.png';
-import EmeraldLamp from '../assets/EmeraldLamp.png';
+import EmeraldGreenChair from '../assets/HomePageVintageItems/EmeraldGreenChair.png';
+import ForestGreenWrapDress from '../assets/HomePageVintageItems/ForestGreenWrapDress.png';
+import GoldenHoopEarrings from '../assets/HomePageVintageItems/GoldenHoopEarrings.png';
+import SunsetSilkScarf from '../assets/HomePageVintageItems/SunsetSilkScarf.png';
+import VintageCamera from '../assets/HomePageVintageItems/VintageCamera.png';
+import VintageVinylRecord from '../assets/HomePageVintageItems/VintageVynlRecord.png';
+import EmeraldLamp from '../assets/HomePageVintageItems/EmeraldLamp.png';
 
 const inventory = [
   { id: 1, name: "Emerald Velvet Armchair", price: "$180", tag: "New Arrival", category: "Furniture", img: EmeraldGreenChair },

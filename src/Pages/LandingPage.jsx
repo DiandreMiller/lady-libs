@@ -1,5 +1,5 @@
 import LadyLibsLogo from '../assets/LadyLibsImages/LadyLibsLogo.png';
-import AllVintageItems from '../assets/AllVintageItems.png';
+import AllVintageItems from '../assets/LandingPageVintageItems/AllVintageItems.png';
 
 const LandingPage = () => {
     return (
