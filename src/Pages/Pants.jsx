@@ -35,39 +35,39 @@ import TurquoiseSweatpants from '../assets/VintageSweatpants/TurquoiseSweatpants
 
 
 const businessPants = [
-    { id: 1, name: 'Black Business Pants', price: '$65', tag: 'New', category: 'Fitted Dress', color: 'Black/Red', img: BlackBusinessPants },
-    { id: 2, name: 'Blue Business Pants', price: '$60', tag: 'Classic', category: 'Long Blue Dress', color: 'Blue', img: BlueBusinessPants },
-    { id: 3, name: 'Green Business Pants', price: '$72', tag: 'Limited', category: 'Halter Yellow Dress', color: 'Yellow', img: GreenBusinessPants },
-    { id: 4, name: 'Orange Business Pants', price: '$66', tag: 'New Drop', category: 'Pink Flowy Dress', color: 'Pink', img: OrangeBusinessPants },
-    { id: 5, name: 'Pink Business Pants', price: '$48', tag: 'Just In', category: 'Satin', color: 'Pink', img: PinkBusinessPants },
-    { id: 6, name: 'Yellow Women Pants', price: '$64', tag: 'Festive', category: 'Festive', color: 'Brown', img: YellowWomenPants },
+    { id: 1, name: 'Black Business Pants', price: '$67', tag: 'New', category: 'Business Pants', color: 'Black', img: BlackBusinessPants },
+    { id: 2, name: 'Blue Business Pants', price: '$65', tag: 'Classic', category: 'Business Pants', color: 'Blue', img: BlueBusinessPants },
+    { id: 3, name: 'Green Business Pants', price: '$72', tag: 'Limited', category: 'Business Pants', color: 'Green', img: GreenBusinessPants },
+    { id: 4, name: 'Orange Business Pants', price: '$69', tag: 'New Drop', category: 'Business Pants', color: 'Orange', img: OrangeBusinessPants },
+    { id: 5, name: 'Pink Business Pants', price: '$58', tag: 'Just In', category: 'Business Pants', color: 'Pink', img: PinkBusinessPants },
+    { id: 6, name: 'Yellow Women Pants', price: '$68', tag: 'Festive', category: 'Business Pants', color: 'Yellow', img: YellowWomenPants },
   ];
 
 const jeans = [
-    { id: 1, name: 'Black Ripped Jeans', price: '$85', tag: 'New', category: '1930s Business Casual', color: 'White/ Light Brown', img: BlackRippedJeans },
-    { id: 2, name: 'High Waist Blue Jeans', price: '$80', tag: 'Classic', category: '1940s Halter Top', color: 'Pink', img: HighWaistBlueJeans },
-    { id: 3, name: 'Orange Jeans', price: '$92', tag: 'Limited', category: '1950s Christmas', color: 'Velvet', img: OrangeJeans },
-    { id: 4, name: 'Pink Stretchy Jeans', price: '$86', tag: 'New Drop', category: 'Velvet 1960', color: 'Red', img: PinkStretchyJeans },
-    { id: 5, name: 'Purple Jeans', price: '$68', tag: 'Just In', category: 'Fitted', color: 'Gold', img: PurpleJeans },
-    { id: 6, name: 'Yellow Jeans', price: '$84', tag: 'Date Night', category: 'Fitted', color: 'Red', img: YellowJeans },
+    { id: 1, name: 'Black Ripped Jeans', price: '$24', tag: 'New', category: 'Casaul', color: 'Black', img: BlackRippedJeans },
+    { id: 2, name: 'High Waist Blue Jeans', price: '$27', tag: 'Classic', category: 'Casaul', color: 'Blue', img: HighWaistBlueJeans },
+    { id: 3, name: 'Orange Jeans', price: '$22', tag: 'Limited', category: 'Casaul', color: 'Orange', img: OrangeJeans },
+    { id: 4, name: 'Pink Stretchy Jeans', price: '$31', tag: 'New Drop', category: 'Casaul', color: 'Pink', img: PinkStretchyJeans },
+    { id: 5, name: 'Purple Jeans', price: '$28', tag: 'Just In', category: 'Casaul', color: 'Purple', img: PurpleJeans },
+    { id: 6, name: 'Yellow Jeans', price: '$34', tag: 'Casual', category: 'Casaul', color: 'Yellow', img: YellowJeans },
 ]
 
 const leggings = [
-    { id: 1, name: 'Black Leggings', price: '$65', tag: 'New', category: 'Fitted Dress', color: 'Black/Red', img: BlackLeggings },
-    { id: 2, name: 'Dark Grey Leggings', price: '$60', tag: 'Classic', category: 'Long Blue Dress', color: 'Blue', img: DarkGreyLeggings },
-    { id: 3, name: 'Light Blue Leggings', price: '$72', tag: 'Limited', category: 'Halter Yellow Dress', color: 'Yellow', img: LightBlueLeggings },
-    { id: 4, name: 'Light Grey Leggings', price: '$66', tag: 'New Drop', category: 'Pink Flowy Dress', color: 'Pink', img: LightGreyLeggings },
-    { id: 5, name: 'Pink Leggings', price: '$48', tag: 'Just In', category: 'Satin', color: 'Pink', img: PinkLeggings },
-    { id: 6, name: 'Red Leggings', price: '$64', tag: 'Festive', category: 'Festive', color: 'Brown', img: RedLeggings },
+    { id: 1, name: 'Black Leggings', price: '$65', tag: 'New', category: 'Workout/Casual', color: 'Black', img: BlackLeggings },
+    { id: 2, name: 'Dark Grey Leggings', price: '$60', tag: 'Classic', category: 'Workout/Casual', color: 'Dark Grey', img: DarkGreyLeggings },
+    { id: 3, name: 'Light Blue Leggings', price: '$72', tag: 'Limited', category: 'Workout/Casual', color: 'Light Blue', img: LightBlueLeggings },
+    { id: 4, name: 'Light Grey Leggings', price: '$66', tag: 'New Drop', category: 'Workout/Casual', color: 'Light Grey', img: LightGreyLeggings },
+    { id: 5, name: 'Pink Leggings', price: '$48', tag: 'Just In', category: 'Workout/Casual', color: 'Pink', img: PinkLeggings },
+    { id: 6, name: 'Red Leggings', price: '$64', tag: 'Festive', category: 'Workout/Casual', color: 'Red', img: RedLeggings },
   ];
 
   const sweatpants = [
-    { id: 1, name: 'Green Sweatpants', price: '$65', tag: 'New', category: 'Fitted Dress', color: 'Black/Red', img: GreenSweatpants },
-    { id: 2, name: 'Orange Sweatpants', price: '$60', tag: 'Classic', category: 'Long Blue Dress', color: 'Blue', img: OrangeSweatpants },
-    { id: 3, name: 'Pink Sweatpants', price: '$72', tag: 'Limited', category: 'Halter Yellow Dress', color: 'Yellow', img: PinkSweatPants },
-    { id: 4, name: 'Purple Sweatpants', price: '$66', tag: 'New Drop', category: 'Pink Flowy Dress', color: 'Pink', img: PurpleSweatpants },
-    { id: 5, name: 'Soft Yellow Sweatpants', price: '$48', tag: 'Just In', category: 'Satin', color: 'Pink', img: SoftYellowSweatpants },
-    { id: 6, name: 'Turquoise Sweatpants', price: '$64', tag: 'Festive', category: 'Festive', color: 'Brown', img: TurquoiseSweatpants },
+    { id: 1, name: 'Green Sweatpants', price: '$45', tag: 'New', category: 'Sweatpants', color: 'Green', img: GreenSweatpants },
+    { id: 2, name: 'Orange Sweatpants', price: '$40', tag: 'Classic', category: 'Sweatpants', color: 'Orange', img: OrangeSweatpants },
+    { id: 3, name: 'Pink Sweatpants', price: '$52', tag: 'Limited', category: 'Sweatpants', color: 'Pink', img: PinkSweatPants },
+    { id: 4, name: 'Purple Sweatpants', price: '$46', tag: 'New Drop', category: 'Sweatpants', color: 'Purple', img: PurpleSweatpants },
+    { id: 5, name: 'Soft Yellow Sweatpants', price: '$38', tag: 'Just In', category: 'Sweatpants', color: 'Yellow', img: SoftYellowSweatpants },
+    { id: 6, name: 'Turquoise Sweatpants', price: '$44', tag: 'Festive', category: 'Sweatpants', color: 'Turquoise', img: TurquoiseSweatpants },
   ];
 
   import { useState } from 'react';
@@ -77,7 +77,7 @@ const leggings = [
     const [openLoadMore, setOpenLoadMore] = useState(false);
 
     const openLoadMoreItems = () => {
-        
+
     }
 
     return (
