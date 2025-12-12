@@ -21,7 +21,7 @@ const EmailSent = () => (
         <div className="mx-auto mb-8 flex justify-center">
           <div
             className="
-              w-40 h-40 sm:w-48 sm:h-48
+              w-80 h-80 sm:w-72 sm:h-72
               rounded-3xl overflow-hidden
               border border-purple-500/50
               bg-purple-900/50
