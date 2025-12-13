@@ -69,7 +69,7 @@ const vintageBracelets = [
   
           {/* Vintage Earrings */}
           <section className="mt-14 rounded-3xl bg-purple-950/40 p-5 shadow-xl backdrop-blur-md">
-            <h3 className="text-lg font-semibold">Earrings</h3>
+            <h3 className="text-lg font-semibold"> Vintage Earrings</h3>
             <p className="mb-6 text-xs text-yellow-100/80">
               Elegant and vintage earrings.
             </p>
@@ -112,7 +112,7 @@ const vintageBracelets = [
 
           {/* Vintage Neckless */}
           <section className="mt-14 rounded-3xl bg-purple-950/40 p-5 shadow-xl backdrop-blur-md">
-            <h3 className="text-lg font-semibold">Necklesses</h3>
+            <h3 className="text-lg font-semibold">Stunning Necklesses</h3>
             <p className="mb-6 text-xs text-yellow-100/80">
               Beautiful necklesses, and elegant vintage designs.
             </p>
@@ -155,7 +155,7 @@ const vintageBracelets = [
 
             {/* Vintage Rings */}
             <section className="mt-14 rounded-3xl bg-purple-950/40 p-5 shadow-xl backdrop-blur-md">
-            <h3 className="text-lg font-semibold">Rings</h3>
+            <h3 className="text-lg font-semibold">Vibrant Rings</h3>
             <p className="mb-6 text-xs text-yellow-100/80">
               Lovely elegant rings with vintage designs.
             </p>
@@ -198,7 +198,7 @@ const vintageBracelets = [
 
             {/* Vintage Bracelets */}
             <section className="mt-14 rounded-3xl bg-purple-950/40 p-5 shadow-xl backdrop-blur-md">
-            <h3 className="text-lg font-semibold">Bracelets</h3>
+            <h3 className="text-lg font-semibold">Gorgegous Bracelets</h3>
             <p className="mb-6 text-xs text-yellow-100/80">
               Stunning bracelets, and elegant vintage designs.
             </p>
