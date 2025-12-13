@@ -41,7 +41,7 @@ const vintageMirrors = [
   
           {/* Vintage Mirrors */}
           <section className="mt-14 rounded-3xl bg-purple-950/40 p-5 shadow-xl backdrop-blur-md">
-            <h3 className="text-lg font-semibold">Mirrors</h3>
+            <h3 className="text-lg font-semibold">Timeless Mirrors</h3>
             <p className="mb-6 text-xs text-yellow-100/80">
               Elegant vintage designs.
             </p>
