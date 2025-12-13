@@ -21,6 +21,7 @@ import Scarves from "./Pages/Scarves.jsx";
 import Skirts from "./Pages/Skirts.jsx";
 import Sweaters from "./Pages/Sweaters.jsx";
 import TermsAndConditions from "./Pages/TermsAndConditions.jsx"; 
+import Vases from "./Pages/Vases.jsx";
 
 //TODO:
 
@@ -62,6 +63,7 @@ function AliasRouter() {
     redirectIf("inventory/skirts", "inventory/skirts") ||
     redirectIf("inventory/sweaters", "inventory/sweaters") ||
     redirectIf("inventory/tops", "inventory/tops") ||
+    redirectIf("inventory/vases", "inventory/vases") ||
     redirectIf("privacy", "privacy") ||
     redirectIf("terms", "terms") ||
     redirectIf("product", pathname) ||
@@ -98,6 +100,7 @@ function App() {
               <Route element={<Skirts />} path='/inventory/skirts' />
               <Route element={<Sweaters />} path='/inventory/sweaters' />
               <Route element={<Tops />} path='/inventory/tops' />
+              <Route element={<Vases />} path='/inventory/vases' />
               <Route element={<EmailSent />} path='/emailsent' />
               <Route element={<PrivacyPolicy />} path='/privacy' />
               <Route element={<TermsAndConditions />} path="/terms" />
