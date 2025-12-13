@@ -24,6 +24,7 @@ const Navbar = () => {
     { label: "Scarves", to: "/inventory/scarves" },
     { label: "Skirts", to: "/inventory/skirts" },
     { label: "Sweaters", to: "/inventory/sweaters" },
+    { label: "Hats", to: "/inventory/hats" }, 
     { label: "Tops", to: "/inventory/tops" }, 
     { label: "About Me", to: "/aboutme" },
     { label: "Contact Me", to: "/contactme" }, 
