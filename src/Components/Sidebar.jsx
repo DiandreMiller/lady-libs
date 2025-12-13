@@ -84,7 +84,7 @@ const Sidebar = () => {
             <Link to='/inventory/sweaters'><SidebarMiniLink label="Sweaters" /></Link>
 
             <SectionLabel className="mt-3">Accessories</SectionLabel>
-            <SidebarMiniLink label="Jewelry" />
+            <Link to='/inventory/jewlery'><SidebarMiniLink label="Jewelry" /></Link>
             <SidebarMiniLink label="Bags" />
             <SidebarMiniLink label="Scarves" />
             <SidebarMiniLink label="Hats" />
