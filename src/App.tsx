@@ -5,6 +5,7 @@ import "./App.css";
 import Dresses from "./Pages/Dresses.jsx";
 import Home from "./Pages/Home.jsx";
 import Jackets from "./Pages/Jackets.jsx";
+import Jewlery from "./Pages/Jewlery.jsx";
 import LandingPage from "./Pages/LandingPage.jsx";
 import About from "./Pages/About.jsx";
 import FourOFour from './Pages/FourOFour.jsx';
@@ -31,6 +32,7 @@ import { CartProvider } from "./context/CartContext";
 import { DefaultLayout, BareLayout } from "./Components/Layout";
 import Tops from "./Pages/Tops.jsx";
 
+
 function AliasRouter() {
   const { pathname } = useLocation();
 
@@ -47,6 +49,7 @@ function AliasRouter() {
     redirectIf("inventory", "inventory") ||
     redirectIf("inventory/dresses", "inventory/dresses") ||
     redirectIf("inventory/jackets", "inventory/jackets") ||
+    redirectIf("inventory/jewlery", "inventory/jewlery") ||
     redirectIf("inventory/pants", "inventory/pants") ||
     redirectIf("inventory/skirts", "inventory/skirts") ||
     redirectIf("inventory/sweaters", "inventory/sweaters") ||
@@ -78,6 +81,7 @@ function App() {
               <Route element={<Home />} path="/inventory" />
               <Route element={<Dresses />} path='/inventory/dresses' />
               <Route element={<Jackets />} path='/inventory/jackets' />
+              <Route element={<Jewlery />} path='/inventory/jewlery' />
               <Route element={<Pants />} path='/inventory/pants' />
               <Route element={<Skirts />} path='/inventory/skirts' />
               <Route element={<Sweaters />} path='/inventory/sweaters' />
