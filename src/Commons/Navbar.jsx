@@ -21,6 +21,7 @@ const Navbar = () => {
     { label: "Bags", to: "/inventory/bags" },
     { label: "Pants", to: "/inventory/pants" },
     { label: "Jewerly", to: "/inventory/jewlery" },
+    { label: "Lamps", to: "/inventory/lamps" },
     { label: "Scarves", to: "/inventory/scarves" },
     { label: "Skirts", to: "/inventory/skirts" },
     { label: "Sweaters", to: "/inventory/sweaters" },
