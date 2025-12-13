@@ -23,13 +23,13 @@ import WhiteBluePearlBracelet from '../assets/VintageJewlery/WhiteBluePearlBrace
 
 const vintageEarring = [
     { id: 1, name: 'Golden Hoop Earrings', price: '$250', tag: 'New', category: 'Jewelery/Earrings', color: 'Gold', img: GoldenHoopEarrings },
-    { id: 2, name: 'Round Earrings Wooden Leather Earrings', price: '$110', tag: 'Classic', category: 'Jewlery/Wooden', color: 'Brown', img: RoundEarringsWoodenLeatherEarrings },
-    { id: 3, name: 'Bronze Opal Earrings', price: '$123', tag: 'Limited', category: 'Jewlery/Bronze', color: 'Bronze', img: BronzeOpalEarrings },
+    { id: 2, name: 'Round Earrings Wooden Leather Earrings', price: '$35', tag: 'Classic', category: 'Jewlery/Wooden', color: 'Brown', img: RoundEarringsWoodenLeatherEarrings },
+    { id: 3, name: 'Bronze Opal Earrings', price: '$13', tag: 'Limited', category: 'Jewlery/Bronze', color: 'Bronze', img: BronzeOpalEarrings },
   ];
 
 const vintageNeckless = [
     { id: 1, name: 'Gold Clover Necklace', price: '$25', tag: 'New', category: 'Jewelery/Neckless', color: 'Gold, Green, Red, Yellow', img: GoldCloverNecklace },
-    { id: 2, name: 'Turquoise Rhinestone Handmade Woven Rope Necklace', price: '$40', tag: 'Classic', category: 'Jewlery/Neckless', color: 'Turquoise', img: TurquoiseRhinestoneHandmadeWovenRopeNecklace },
+    { id: 2, name: 'Turquoise Rhinestone Necklace', price: '$40', tag: 'Classic', category: 'Jewlery/Neckless', color: 'Turquoise', img: TurquoiseRhinestoneHandmadeWovenRopeNecklace },
     { id: 3, name: 'Sun Moon Necklace', price: '$25', tag: 'Limited', category: 'Jewlery/Neckless', color: 'Silver', img: SunMoonNecklace },
   ];
 

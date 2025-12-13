@@ -9,7 +9,7 @@ import EmeraldLamp from '../assets/HomePageVintageItems/EmeraldLamp.png';
 const inventory = [
   { id: 1, name: "Emerald Velvet Armchair", price: "$180", tag: "New Arrival", category: "Furniture", img: EmeraldGreenChair },
   { id: 2, name: "Forest Green Wrap Dress", price: "$65", tag: "Just In", category: "Clothing", img: ForestGreenWrapDress },
-  { id: 3, name: "Golden Hoop Earrings", price: "$30", tag: "Limited", category: "Jewelry", img: GoldenHoopEarrings },
+  { id: 3, name: "Golden Hoop Earrings", price: "$250", tag: "Limited", category: "Jewelry", img: GoldenHoopEarrings },
   { id: 4, name: "Sunset Silk Scarf", price: "$42", tag: "Best Seller", category: "Accessories", img: SunsetSilkScarf },
   { id: 5, name: "Retro Camera", price: "$95", tag: "One of One", category: "Decor", img: VintageCamera },
   { id: 6, name: "Vintage Vinyl Record", price: "$25", tag: "Classic", category: "Music", img: VintageVinylRecord },
