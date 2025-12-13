@@ -18,14 +18,15 @@ const Navbar = () => {
   const mobileNavItems = [
     { label: "Home", to: "/" },
     { label: "Shop", to: "/inventory" },
-    { label: "About Me", to: "/aboutme" },
-    { label: "Contact Me", to: "/contactme" },
     { label: "Bags", to: "/inventory/bags" },
     { label: "Pants", to: "/inventory/pants" },
     { label: "Jewerly", to: "/inventory/jewlery" },
+    { label: "Scarves", to: "/inventory/scarves" },
     { label: "Skirts", to: "/inventory/skirts" },
     { label: "Sweaters", to: "/inventory/sweaters" },
-    { label: "Tops", to: "/inventory/tops" },  
+    { label: "Tops", to: "/inventory/tops" }, 
+    { label: "About Me", to: "/aboutme" },
+    { label: "Contact Me", to: "/contactme" }, 
   ];
 
 
