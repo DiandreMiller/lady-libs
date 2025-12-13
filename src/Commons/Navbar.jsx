@@ -15,6 +15,20 @@ const Navbar = () => {
     { label: "Contact Me", to: "/contactme" },
   ];
 
+  const mobileNavItems = [
+    { label: "Home", to: "/" },
+    { label: "Shop", to: "/inventory" },
+    { label: "About Me", to: "/aboutme" },
+    { label: "Contact Me", to: "/contactme" },
+    { label: "Bags", to: "/inventory/bags" },
+    { label: "Pants", to: "/inventory/pants" },
+    { label: "Jewerly", to: "/inventory/jewlery" },
+    { label: "Skirts", to: "/inventory/skirts" },
+    { label: "Sweaters", to: "/inventory/sweaters" },
+    { label: "Tops", to: "/inventory/tops" },  
+  ];
+
+
   const isActive = (to) => pathname === to;
 
   return (
@@ -122,7 +136,7 @@ const Navbar = () => {
       {open && (
         <div className="sm:hidden border-t border-purple-700/40 bg-purple-950/95 backdrop-blur-xl">
           <div className="mx-auto max-w-6xl px-4 py-3 space-y-2">
-            {navItems.map((item) => (
+            {mobileNavItems.map((item) => (
               <Link
                 key={item.to}
                 to={item.to}
