@@ -85,7 +85,7 @@ const Sidebar = () => {
 
             <SectionLabel className="mt-3">Accessories</SectionLabel>
             <Link to='/inventory/jewlery'><SidebarMiniLink label="Jewelry" /></Link>
-            <SidebarMiniLink label="Bags" />
+            <Link to='/inventory/bags'><SidebarMiniLink label="Bags" /></Link>
             <SidebarMiniLink label="Scarves" />
             <SidebarMiniLink label="Hats" />
 

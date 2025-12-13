@@ -4,6 +4,7 @@ import "./App.css";
 // pages
 import Dresses from "./Pages/Dresses.jsx";
 import Home from "./Pages/Home.jsx";
+import Bags from "./Pages/Bags.jsx";
 import Jackets from "./Pages/Jackets.jsx";
 import Jewlery from "./Pages/Jewlery.jsx";
 import LandingPage from "./Pages/LandingPage.jsx";
@@ -47,6 +48,7 @@ function AliasRouter() {
     redirectIf("contactme", "contactme") ||
     redirectIf("emailsent", "emailsent") ||
     redirectIf("inventory", "inventory") ||
+    redirectIf("inventory/bags", "inventory/bags") ||
     redirectIf("inventory/dresses", "inventory/dresses") ||
     redirectIf("inventory/jackets", "inventory/jackets") ||
     redirectIf("inventory/jewlery", "inventory/jewlery") ||
@@ -79,6 +81,7 @@ function App() {
               <Route element={<Cart />} path='/cart' />
               <Route element={<ContactMe />} path='/contactme' />
               <Route element={<Home />} path="/inventory" />
+              <Route element={<Bags />} path='/inventory/bags' />
               <Route element={<Dresses />} path='/inventory/dresses' />
               <Route element={<Jackets />} path='/inventory/jackets' />
               <Route element={<Jewlery />} path='/inventory/jewlery' />
