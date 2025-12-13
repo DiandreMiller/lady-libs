@@ -93,7 +93,7 @@ const Sidebar = () => {
             <Link to='/inventory/lamps'><SidebarMiniLink label="Lamps" /></Link>
             <Link to='/inventory/vases'><SidebarMiniLink label="Vases" /></Link>
             <Link to='/inventory/mirrors'><SidebarMiniLink label="Mirrors" /></Link>
-            <SidebarMiniLink label="Wall Art" />
+            <Link to='/inventory/wallart'><SidebarMiniLink label="Wall Art" /></Link>
           </div>
         </SidebarSection>
 
