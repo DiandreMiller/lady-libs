@@ -92,7 +92,7 @@ const Sidebar = () => {
             <SectionLabel className="mt-3">Home Decor</SectionLabel>
             <Link to='/inventory/lamps'><SidebarMiniLink label="Lamps" /></Link>
             <Link to='/inventory/vases'><SidebarMiniLink label="Vases" /></Link>
-            <SidebarMiniLink label="Mirrors" />
+            <Link to='/inventory/mirrors'><SidebarMiniLink label="Mirrors" /></Link>
             <SidebarMiniLink label="Wall Art" />
           </div>
         </SidebarSection>

@@ -16,6 +16,7 @@ import EmailSent from "./Pages/EmailSent.jsx";
 import Pants from './Pages/Pants.jsx'
 import Hats from "./Pages/Hats.jsx";
 import Lamps from "./Pages/Lamp.jsx";
+import Mirrors from "./Pages/Mirrors.jsx";
 import PrivacyPolicy from './Pages/Legal.jsx'
 import Scarves from "./Pages/Scarves.jsx";
 import Skirts from "./Pages/Skirts.jsx";
@@ -58,6 +59,7 @@ function AliasRouter() {
     redirectIf("inventory/jackets", "inventory/jackets") ||
     redirectIf("inventory/jewlery", "inventory/jewlery") ||
     redirectIf("inventory/lamps", "inventory/lamps") ||
+    redirectIf("inventory/mirrors", "inventory/mirrors") ||
     redirectIf("inventory/pants", "inventory/pants") ||
     redirectIf("inventory/scarfs", "inventory/scarfs") ||
     redirectIf("inventory/skirts", "inventory/skirts") ||
@@ -95,6 +97,7 @@ function App() {
               <Route element={<Jackets />} path='/inventory/jackets' />
               <Route element={<Jewlery />} path='/inventory/jewlery' />
               <Route element={<Lamps />} path='/inventory/lamps' />
+              <Route element={<Mirrors />} path='/inventory/mirrors' />
               <Route element={<Pants />} path='/inventory/pants' />
               <Route element={<Scarves />} path='/inventory/scarves' />
               <Route element={<Skirts />} path='/inventory/skirts' />
