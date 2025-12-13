@@ -28,6 +28,7 @@ const Navbar = () => {
     { label: "Hats", to: "/inventory/hats" }, 
     { label: "Tops", to: "/inventory/tops" }, 
     { label: "Vases", to: "/inventory/vases" }, 
+    { label: "Mirrors", to: "/inventory/mirrors" }, 
     { label: "About Me", to: "/aboutme" },
     { label: "Contact Me", to: "/contactme" }, 
   ];
