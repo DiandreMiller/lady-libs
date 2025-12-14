@@ -27,7 +27,7 @@ import WallArt from "./Pages/WallArt.jsx";
 
 //TODO:
 
-// Do other mock items
+// Add one day christmas message to the site
 
 // commons
 import Navbar from "./Commons/Navbar";
