@@ -140,8 +140,8 @@ const Navbar = () => {
 
       {/* Mobile Dropdown */}
       {open && (
-        <div className="sm:hidden border-t border-purple-700/40 bg-purple-950/95 backdrop-blur-xl">
-          <div className="mx-auto max-w-6xl px-4 py-3 space-y-2">
+        <div className="sm:hidden fixed inset-x-0 top-16 h-[calc(100vh-4rem)] border-t border-purple-700/40 bg-purple-950/95 backdrop-blur-xl z-50">
+          <div className="h-full overflow-y-auto mx-auto max-w-6xl px-4 py-3 space-y-2">
             {mobileNavItems.map((item) => (
               <Link
                 key={item.to}
@@ -157,21 +157,12 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Mobile "View Cart" Button inside menu */}
             <button
               onClick={() => {
                 setOpen(false);
                 navigate("/cart");
               }}
-              className="
-                mt-3 w-full rounded-full
-                bg-gradient-to-r from-yellow-200 to-orange-300
-                px-4 py-2.5 text-sm font-semibold text-purple-900
-                shadow-md shadow-purple-900/60
-                hover:brightness-110 active:scale-95
-                transition
-              "
-            >
+              className="mt-3 w-full rounded-full bg-gradient-to-r from-yellow-200 to-orange-300 px-4 py-2.5 text-sm font-semibold text-purple-900 shadow-md shadow-purple-900/60 hover:brightness-110 active:scale-95 transition">
               View Cart
             </button>
           </div>
