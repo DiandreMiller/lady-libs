@@ -68,3 +68,13 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+@layer utilities {
+  .overflow-y-auto {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .h-dvh-minus-nav {
+    height: calc(100dvh - 64px);
+  }
+}
