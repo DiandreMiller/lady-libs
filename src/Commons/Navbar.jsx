@@ -155,7 +155,7 @@ const Navbar = () => {
               maxHeight: 'calc(100vh - 64px)'
             }}
           >
-            <div className="h-full overflow-y-auto mx-auto max-w-6xl px-4 py-3 space-y-2">
+            <div className="h-full overflow-y-auto mx-auto max-w-6xl px-4 py-3 space-y-2 pb-24">
               {mobileNavItems.map((item) => (
                 <Link
                   key={item.to}
