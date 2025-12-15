@@ -139,36 +139,6 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Dropdown */}
-      {/* {open && (
-        <div className="sm:hidden fixed inset-x-0 top-16 h-[calc(100vh-4rem)] border-t border-purple-700/40 bg-purple-950/95 backdrop-blur-xl z-50">
-          <div className="h-full overflow-y-auto mx-auto max-w-6xl px-4 py-3 space-y-2">
-            {mobileNavItems.map((item) => (
-              <Link
-                key={item.to}
-                to={item.to}
-                onClick={() => setOpen(false)}
-                className={`block rounded-full px-3 py-2 text-sm font-medium transition ${
-                  isActive(item.to)
-                    ? "bg-emerald-500 text-purple-950"
-                    : "text-yellow-100/85 hover:bg-purple-800/80 hover:text-white"
-                }`}
-              >
-                {item.label}
-              </Link>
-            ))}
-
-            <button
-              onClick={() => {
-                setOpen(false);
-                navigate("/cart");
-              }}
-              className="mt-3 w-full rounded-full bg-gradient-to-r from-yellow-200 to-orange-300 px-4 py-2.5 text-sm font-semibold text-purple-900 shadow-md shadow-purple-900/60 hover:brightness-110 active:scale-95 transition">
-              View Cart
-            </button>
-          </div>
-        </div>
-      )} */}
-
       {open && (
         <>
           {/* Backdrop */}
