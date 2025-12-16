@@ -1,5 +1,6 @@
 import LadyLibsLogo from '../assets/LadyLibsImages/LadyLibsLogo.png';
 import AllVintageItems from '../assets/LandingPageVintageItems/AllVintageItems.png';
+import Notification from "../Components/Notification";
 
 const LandingPage = () => {
     return (
@@ -207,6 +208,7 @@ const LandingPage = () => {
             </div>
           </main>
         </div>
+        <Notification />
       </div>
     );
   };

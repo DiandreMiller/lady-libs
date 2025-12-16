@@ -25,6 +25,7 @@ import TermsAndConditions from "./Pages/TermsAndConditions.jsx";
 import Vases from "./Pages/Vases.jsx";
 import WallArt from "./Pages/WallArt.jsx";
 
+
 //TODO:
 
 // Add one day christmas message to the site. Figure out what you want the message to be. Mybe it can be something with Clark.
