@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-import  getChristmasNotification  from "../api/notification";
+import getChristmasNotification from "../api/notification";
+import BeHappy from "../assets/BeHappy.mp4";
+
 
 const Notification = () => {
   const [notification, setNotification] = useState(null);
+  const [videoEnded, setVideoEnded] = useState(false);
 
   useEffect(() => {
     const data = getChristmasNotification();
@@ -12,85 +15,44 @@ const Notification = () => {
   if (!notification || notification.id === "Not today") return null;
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-      <div className="w-full max-w-md rounded-3xl bg-purple-950/90 p-8 shadow-2xl border border-purple-700/40 text-center">
-        <h2 className="text-2xl font-extrabold text-yellow-50">
-          {notification.title}
-        </h2>
-        <p className="mt-4 text-yellow-100/90">
-          {notification.message}
-        </p>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 px-4">
+      <div className="w-full max-w-lg rounded-3xl bg-purple-950/95 p-6 shadow-2xl border border-purple-700/40 text-center space-y-4">
 
-        <button
-          onClick={() => setNotification(null)}
-          className="mt-6 inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-2 text-sm font-semibold text-purple-950 transition hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
-        >
-          Close
-        </button>
+        {/* Title */}
+        <h2 className="text-2xl sm:text-3xl font-extrabold text-yellow-50">
+          Merry Christmas Baby Girl, I Love You 💛
+        </h2>
+
+        {/* Video */}
+        {!videoEnded && (
+          <video
+            src={BeHappy}
+            controls
+            playsInline
+            onEnded={() => setVideoEnded(true)}
+            className="w-full rounded-2xl border border-purple-700/40 shadow-lg"
+          />
+        )}
+
+        {/* After video message */}
+        {videoEnded && (
+          <div className="space-y-3">
+            <p className="text-lg text-yellow-100">
+              Check back December 29th, 2026 ✨
+            </p>
+
+            <button
+              onClick={() => setNotification(null)}
+              className="inline-flex items-center justify-center rounded-full bg-amber-400 px-6 py-2 text-sm font-semibold text-purple-950 transition hover:bg-amber-300 focus:outline-none focus:ring-2 focus:ring-amber-500"
+            >
+              Close
+            </button>
+          </div>
+        )}
+
       </div>
     </div>
   );
 };
 
 export default Notification;
-
-
-// Keep, this uses backend api for later
-
-// import axios from 'axios';
-// import { useState, useEffect } from 'react';
-
-// const Notification = () => {
-
-//     const [notification, setNotification] = useState({});
-//     const API_BASE = import.meta.env.VITE_REACT_APP_BACKEND_API;
-
-//     useEffect(() => {
-//         const getChristmasMessage = async () => {
-//             try {
-//                 const message = await axios.get(`${API_BASE}/api/notification`);
-//                 const data = message.data;
-//                 setNotification(data);
-//             } catch (err) {
-//                 console.error('Message Missing',err);
-//             }
-//         }
-
-//         getChristmasMessage()
-//     },[])
-
-//     console.log('Notification:', notification);
-
-//     return (
-//         <>
-//           {notification?.title && (
-//             <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
-//               <div className="relative w-full max-w-md mx-4 rounded-2xl bg-gradient-to-b from-[#2a1a14] to-[#1a0f0b] shadow-2xl border border-amber-300/30">
-                
-//                 {/* Decorative glow */}
-//                 <div className="absolute -top-10 left-1/2 -translate-x-1/2 h-24 w-24 rounded-full bg-amber-400/20 blur-3xl" />
-      
-//                 {/* Content */}
-//                 <div className="relative p-8 text-center">
-//                   <h2 className="mb-3 font-serif text-2xl tracking-wide text-amber-200">
-//                     {notification.title}
-//                   </h2>
-      
-//                   <p className="mb-6 text-base text-amber-100/90 leading-relaxed">
-//                     {notification.message}
-//                   </p>
-      
-//                   <button
-//                     onClick={() => setNotification({})}
-//                     className="mt-2 inline-flex items-center justify-center rounded-full bg-orange-500 px-6 py-2 text-sm font-semibold text-white transition hover:bg-orange-400 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2 focus:ring-offset-[#1a0f0b]">
-//                     Close
-//                   </button>
-//                 </div>
-//               </div>
-//             </div>
-//           )}
-//         </>
-//       );
-// }
-
-// export default Notification
