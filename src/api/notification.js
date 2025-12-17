@@ -8,7 +8,7 @@ const getChristmasNotification = () => {
     );
   
     const year = easternTime.getFullYear();
-    const month = easternTime.getMonth(); // 0-based (Dec = 11)
+    const month = easternTime.getMonth(); 
     const date = easternTime.getDate();
   
     console.log(
@@ -16,7 +16,7 @@ const getChristmasNotification = () => {
       `${year}-${month + 1}-${date}`
     );
   
-    if (year !== 2025 || month !== 11 || date !== 16) {
+    if (year !== 2025 || month !== 11 || date !== 17) {
       return {
         id: "Not today",
         title: "Wait til midnight",
