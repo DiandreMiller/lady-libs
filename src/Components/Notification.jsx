@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import getChristmasNotification from "../api/notification";
 import BeHappy from "../assets/BeHappy.mp4";
 
+
 const Notification = () => {
   const [notification, setNotification] = useState(null);
   const [videoEnded, setVideoEnded] = useState(false);
