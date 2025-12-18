@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import getChristmasNotification from "../api/notification";
+import notificationAPI from "../api/notification";
 import BeHappy from "../assets/BeHappy1.MP4";
 
 
@@ -8,7 +8,7 @@ const Notification = () => {
   const [videoEnded, setVideoEnded] = useState(false);
 
   useEffect(() => {
-    const data = getChristmasNotification();
+    const data = notificationAPI.getChristmasNotification();
     setNotification(data);
   }, []);
 
