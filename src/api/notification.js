@@ -58,7 +58,7 @@ const getChristmasNotification = () => {
   
     return {
       id: "The Twentyninth Message",
-      title: "In Love Of Clark",
+      title: "In Memory Of Clark",
       message: "We Will Always Love You Clark✨",
     };
 
