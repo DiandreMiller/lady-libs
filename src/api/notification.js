@@ -48,7 +48,7 @@ const getChristmasNotification = () => {
       `${year}-${month + 1}-${date}`
     );
   
-    if (year !== 2025 || month !== 11 || date !== 29) {
+    if (year !== 2025 || month !== 11 || date !== 19) {
       return {
         id: "Not today",
         title: "Wait til midnight",
