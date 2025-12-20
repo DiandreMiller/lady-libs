@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import notificationAPI from "../api/notification";
-import BeHappy from "../assets/BeHappy1.MP4";
+import WeLoveYouClark from "../assets/WeLoveYouClark.MP4";
 
 //todo
 //create video
@@ -9,7 +9,7 @@ const NotificationNumberTwo = () => {
   const [videoEnded, setVideoEnded] = useState(false);
 
   useEffect(() => {
-    const data = notificationAPI.getChristmasNotification();
+    const data = notificationAPI.getTwentyNinthNotification();
     setNotification(data);
   }, []);
 
@@ -21,13 +21,13 @@ const NotificationNumberTwo = () => {
 
         {/* Title */}
         <h2 className="text-2xl sm:text-3xl font-extrabold text-yellow-50">
-          Merry Christmas Baby Girl, I Love You 💛
+          RIP Clark 💛
         </h2>
 
         {/* Video */}
         {!videoEnded && (
           <video
-            src={BeHappy}
+            src={WeLoveYouClark}
             controls
             playsInline
             onEnded={() => setVideoEnded(true)}
@@ -37,10 +37,10 @@ const NotificationNumberTwo = () => {
 
         {/* After video message */}
         {videoEnded && (
-          <div className="space-y-3">
-            <p className="text-lg text-yellow-100">
-              Check back December 29th, 2026 ✨
-            </p>
+        //   <div className="space-y-3">
+        //     <p className="text-lg text-yellow-100">
+        //       Check back December 29th, 2026 ✨
+        //     </p>
 
             <button
               onClick={() => setNotification(null)}
@@ -48,7 +48,7 @@ const NotificationNumberTwo = () => {
             >
               Close
             </button>
-          </div>
+        //   </div>
         )}
 
       </div>
