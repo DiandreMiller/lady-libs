@@ -2,8 +2,6 @@ import { useEffect, useState } from "react";
 import notificationAPI from "../api/notification";
 import WeLoveYouClark from "../assets/WeLoveYouClark.MP4";
 
-//todo
-//create video
 const NotificationNumberTwo = () => {
   const [notification, setNotification] = useState(null);
   const [videoEnded, setVideoEnded] = useState(false);
