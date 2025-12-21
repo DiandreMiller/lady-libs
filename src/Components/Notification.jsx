@@ -1,4 +1,4 @@
-// Components/Notification
+// src/Components/Notification
 import { useEffect, useState } from "react";
 import notificationAPI from "../api/notification";
 import BeHappy from "../assets/BeHappy1.MP4";
