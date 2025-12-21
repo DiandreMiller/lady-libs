@@ -1,3 +1,4 @@
+//Components/NotificationNumberTwo.jsx
 import { useEffect, useState } from "react";
 import notificationAPI from "../api/notification";
 import WeLoveYouClark from "../assets/WeLoveYouClark.MP4";
