@@ -1,23 +1,6 @@
 //Pages/Hats.jsx
-
-//Vintage Hats
-import BlackAndWhiteChurchFeatherHat from '../assets/VintageHats/BlackAndWhiteChurchFeatherHat.png';
-import GreenVelvet1920sHat from '../assets/VintageHats/GreenVelvet1920sHat.png';
-import LightPinkTeardropHat from '../assets/VintageHats/LightPinkTeardropHat.png';
-import PinkRoseHat from '../assets/VintageHats/PinkRoseHat.png';
-import PurpleMiniTopFeatherHat from '../assets/VintageHats/PurpleMiniTopFeatherHat.png';
-import YellowBucketHat from '../assets/VintageHats/YellowBucketHat.png';
-
-
-const vintageHats = [
-    { id: 1, name: 'Black And White Church Feather Hat', price: '$12', tag: 'New', category: 'Hat', color: 'Black/ White', img: BlackAndWhiteChurchFeatherHat },
-    { id: 2, name: 'Green Velvet 1920s Hat', price: '$23', tag: 'Classic', category: 'Hat', color: 'Dark Green', img: GreenVelvet1920sHat },
-    { id: 3, name: 'Light Pink Teardrop Hat', price: '$24', tag: 'Limited', category: 'Hat', color: 'Pink', img: LightPinkTeardropHat },
-    { id: 4, name: 'Pink Rose Hat', price: '$35', tag: 'New Drop', category: 'Hat', color: 'Pink', img: PinkRoseHat },
-    { id: 5, name: 'Purple Mini Top Feather Hat', price: '$15', tag: 'Just In', category: 'Hat', color: 'Purple', img: PurpleMiniTopFeatherHat },
-    { id: 6, name: 'Yellow Bucket Hat', price: '$41', tag: 'Exclusive', category: 'Hat', color: 'Yellow', img: YellowBucketHat },
-  ];
-
+import AllItems from '../ItemsApi/AllItems';
+const vintageHats = AllItems.vintageHats;
 
   const Hats = () => {
     return (

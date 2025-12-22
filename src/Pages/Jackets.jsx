@@ -1,22 +1,6 @@
 //Pages/Jackets.jsx
-
-//Vintage Jackets
-import VintageBlackAndWhiteStripedJacket from '../assets/VintageJackets/VintageBlackAndWhiteStripedJacket.png';
-import VintageBrownJacket from '../assets/VintageJackets/VintageBrownJacket.png';
-import VintageJeanJacket from '../assets/VintageJackets/VintageJeanJacket.png';
-import VintageNYCBlueVarsityJacket from '../assets/VintageJackets/VintageNYCBlueVarsityJacket.png';
-import VintageRedLeatherJacket from '../assets/VintageJackets/VintageRedLeatherJacket.png';
-import VintageYellowJacket from '../assets/VintageJackets/VintageYellowJacket.png';
-
-
-const vintageJackets = [
-    { id: 1, name: 'Vintage Black And White Striped Jacket', price: '$155', tag: 'New', category: 'Fashionable', color: 'White, Black', img: VintageBlackAndWhiteStripedJacket },
-    { id: 2, name: 'Vintage Brown Jacket', price: '$110', tag: 'Classic', category: 'Brown Leather Jacket', color: 'Brown', img: VintageBrownJacket },
-    { id: 3, name: 'Vintage Jean Jacket', price: '$123', tag: 'Limited', category: 'Jean Jacket', color: 'Blue', img: VintageJeanJacket },
-    { id: 4, name: 'Vintage NYC Blue Varsity Jacket', price: '$365', tag: 'New Drop', category: 'Varsity Jacket', color: 'Navy Blue', img: VintageNYCBlueVarsityJacket },
-    { id: 5, name: 'Vintage Red Leather Jacket', price: '$88', tag: 'Just In', category: 'Leather Jacket', color: 'Red', img: VintageRedLeatherJacket },
-    { id: 6, name: 'Vintage Yellow Jacket', price: '$104', tag: 'Festive', category: 'Jacket', color: 'Yellow', img: VintageYellowJacket },
-  ];
+import AllItems from '../ItemsApi/AllItems'; 
+const vintageJackets = AllItems.vintageJackets;
 
 
   const Jackets = () => {

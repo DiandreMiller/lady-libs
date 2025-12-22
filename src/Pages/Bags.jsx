@@ -1,32 +1,11 @@
 //Pages/Bags.jsx
+import AllItems from '../ItemsApi/AllItems';
 
-//Vintage Bags
-import BlackVintageBag from '../assets/VintageBags/BlackVintageBag.png';
-import BurgandyBag from '../assets/VintageBags/BurgandyBag.png';
-import MulticolorBrownBag from '../assets/VintageBags/MulticolorBrownBag.png';
-import OrangeFlowerBag from '../assets/VintageBags/OrangeFlowerBag.png';
-import PinkToteBag from '../assets/VintageBags/PinkToteBag.png';
-import TanColorfulBag from '../assets/VintageBags/TanColorfulBag.png';
-import WhiteAndBlackCrossBag from '../assets/VintageBags/WhiteAndBlackCrossBag.png';
-import WhiteColorfulFlowerBag from '../assets/VintageBags/WhiteColorfulFlowerBag.png';
-import YellowHobo4PieceHandbag from '../assets/VintageBags/YellowHobo4PieceHandbag.png';
+const Bags = () => {
 
+const vintageBags = AllItems.vintageBags;
+    
 
-
-const vintageBags = [
-    { id: 1, name: 'Black Vintage Purse', price: '$45', tag: 'New', category: 'Purse/ Bag/ Handbag', color: 'Black', img: BlackVintageBag },
-    { id: 2, name: 'Burgandy Purse', price: '$40', tag: 'Classic', category: 'Purse/ Bag/ Handbag', color: 'Burgandy', img: BurgandyBag },
-    { id: 3, name: 'Multicolor Brown Bag', price: '$53', tag: 'Limited', category: 'Purse/ Bag/ Handbag', color: 'Brown', img: MulticolorBrownBag },
-    { id: 4, name: 'Orange Flower Bag', price: '$35', tag: 'New Drop', category: 'Purse/ Bag/ Handbag', color: 'Orange', img: OrangeFlowerBag },
-    { id: 5, name: 'Pink Tote Bag', price: '$91', tag: 'Just In', category: 'Purse/ Bag/ Handbag', color: 'Pink', img: PinkToteBag },
-    { id: 6, name: 'Tan Colorful Bag', price: '$45', tag: 'Festive', category: 'Purse/ Bag/ Handbag', color: 'Tan', img: TanColorfulBag },
-    { id: 7, name: 'White And Black Cross Bag', price: '$89', tag: 'Just In', category: 'Leather Purse/ Bag/ Handbag', color: 'White/ Black', img: WhiteAndBlackCrossBag },
-    { id: 8, name: 'White Colorful Flower Bag', price: '$43', tag: 'Festive', category: 'Purse/ Bag/ Handbag', color: 'White', img: WhiteColorfulFlowerBag },
-    { id: 9, name: 'Yellow Hobo 4 Piece Handbag', price: '$47', tag: 'Festive', category: 'Purse/ Bag/ Handbag', color: 'Yellow', img: YellowHobo4PieceHandbag },
-  ];
-
-
-  const Bags = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -100,5 +79,5 @@ const vintageBags = [
     );
   };
   
-  export default Bags;
+export default Bags;
   
