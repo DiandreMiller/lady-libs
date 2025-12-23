@@ -1,25 +1,8 @@
 //Pages/Sweaters.jsx
+import AllItems from '../ItemsApi/AllItems';
+const vintageSweaters = AllItems.vintageSweaters;
 
-//Vintage Sweaters
-import BlackWinterHoodieJacket from '../assets/VintageSweaters/BlackWinterHoodieJacket.png';
-import ColorfulPinkSweater from '../assets/VintageSweaters/ColorfulPinkSweater.png';
-import DarkGreenHoodie from '../assets/VintageSweaters/DarkGreenHoodie.png';
-import RedSweater from '../assets/VintageSweaters/RedSweater.png';
-import WhiteLeafHoodie from '../assets/VintageSweaters/WhiteLeafHoodie.png';
-import YellowSweater from '../assets/VintageSweaters/YellowSweater.png';
-
-
-const vintageSweaters = [
-    { id: 1, name: 'Black Winter Hoodie Jacket', price: '$155', tag: 'New', category: 'Hoodie/ Jacket', color: 'White, Black', img: BlackWinterHoodieJacket },
-    { id: 2, name: 'Colorful Pink Sweater', price: '$30', tag: 'Classic', category: 'Sweater', color: 'Pink/ Yellow', img: ColorfulPinkSweater },
-    { id: 3, name: 'Dark Green Hoodie', price: '$23', tag: 'Limited', category: 'Hoodie', color: 'Dark Green', img: DarkGreenHoodie },
-    { id: 4, name: 'Red Sweater', price: '$65', tag: 'New Drop', category: 'Sweater', color: 'Red', img: RedSweater },
-    { id: 5, name: 'White Leaf Hoodie', price: '$88', tag: 'Just In', category: 'Hoodie', color: 'White', img: WhiteLeafHoodie },
-    { id: 6, name: 'Yellow Sweater', price: '$88', tag: 'Classic', category: 'Sweater', color: 'Yellow', img: YellowSweater },
-  ];
-
-
-  const Sweaters = () => {
+const Sweaters = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -93,5 +76,5 @@ const vintageSweaters = [
     );
   };
   
-  export default Sweaters;
+export default Sweaters;
   
