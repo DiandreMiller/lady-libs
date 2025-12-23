@@ -1,39 +1,8 @@
 //Pages/Dresses.jsx
+import AllItems from '../ItemsApi/AllItems';
 
-//Vintage Decade Dresses
-import KhakisMermaidBusinessDress1930s from '../assets/VintageDresses/1930KhakisMermaidBusinessDress.png';
-import HalterTopPinkPokadotDress1940s from '../assets/VintageDresses/1940sHalterTopPinkPokadotDress.png';
-import ChristmasVelvetDress1950s from '../assets/VintageDresses/1950sChristmasVelvitDress.png';
-import RedVelvetDress1960s from '../assets/VintageDresses/1960RedVelvitDress.png';
-import GoldMetalicDress1970s from '../assets/VintageDresses/1970GoldMetalicDress.png';
-import RedPearlDress1980s from '../assets/VintageDresses/1980sRedPearlDress.png';
-
-// Vintage Dresses
-import BlackAndRedFittedDress from '../assets/VintageDresses/BlackAndRedFittedDress.png';
-import LongBlueDress from '../assets/VintageDresses/LongBlueDress.png';
-import HalterYellowDress from '../assets/VintageDresses/HalterYellowDress.png';
-import PinkPokadotDress from '../assets/VintageDresses/PinkPokadotDress.png';
-import PinkSatinDress from '../assets/VintageDresses/PinkSatinDress.png';
-import TumericGingerManDress from '../assets/VintageDresses/TumericGingerManDress.png';
-
-
-const vintageDresses = [
-    { id: 1, name: 'Black And Red Fitted Dress', price: '$65', tag: 'New', category: 'Fitted Dress', color: 'Black/Red', img: BlackAndRedFittedDress },
-    { id: 2, name: 'Long Blue Dress', price: '$60', tag: 'Classic', category: 'Long Blue Dress', color: 'Blue', img: LongBlueDress },
-    { id: 3, name: 'Halter Yellow Dress', price: '$72', tag: 'Limited', category: 'Halter Yellow Dress', color: 'Yellow', img: HalterYellowDress },
-    { id: 4, name: 'Pink Pokadot Dress', price: '$66', tag: 'New Drop', category: 'Pink Flowy Dress', color: 'Pink', img: PinkPokadotDress },
-    { id: 5, name: 'Pink Satin Dress', price: '$48', tag: 'Just In', category: 'Satin', color: 'Pink', img: PinkSatinDress },
-    { id: 6, name: 'Tumeric Ginger Man Dress', price: '$64', tag: 'Festive', category: 'Festive', color: 'Brown', img: TumericGingerManDress },
-  ];
-
-const decadeVintageDress = [
-    { id: 1, name: 'Khakis Mermaid Business Dress 1930s', price: '$85', tag: 'New', category: '1930s Business Casual', color: 'White/ Light Brown', img: KhakisMermaidBusinessDress1930s },
-    { id: 2, name: 'Halter Top Pink Pokadot Dress 1940s', price: '$80', tag: 'Classic', category: '1940s Halter Top', color: 'Pink', img: HalterTopPinkPokadotDress1940s },
-    { id: 3, name: 'Christmas Velvet Dress 1950s', price: '$92', tag: 'Limited', category: '1950s Christmas', color: 'Velvet', img: ChristmasVelvetDress1950s },
-    { id: 4, name: 'Red Velvet Dress 1960s', price: '$86', tag: 'New Drop', category: 'Velvet 1960', color: 'Red', img: RedVelvetDress1960s },
-    { id: 5, name: 'Gold Metalic Dress 1970s', price: '$68', tag: 'Just In', category: 'Fitted', color: 'Gold', img: GoldMetalicDress1970s },
-    { id: 6, name: 'Red Pearl Dress 1980s', price: '$84', tag: 'Date Night', category: 'Fitted', color: 'Red', img: RedPearlDress1980s },
-]
+const vintageDresses = AllItems.vintageDresses;
+const decadeVintageDress = AllItems.decadeVintageDress;
 
   const Dresses = () => {
     return (
