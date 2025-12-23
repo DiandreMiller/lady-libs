@@ -3,7 +3,7 @@ import AllItems from '../ItemsApi/AllItems';
 const vintageJackets = AllItems.vintageJackets;
 
 
-  const Jackets = () => {
+const Jackets = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -77,5 +77,5 @@ const vintageJackets = AllItems.vintageJackets;
     );
   };
   
-  export default Jackets;
+export default Jackets;
   
