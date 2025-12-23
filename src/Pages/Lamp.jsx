@@ -1,23 +1,6 @@
 //Pages/Lamps.jsx
-
-//Vintage Lamps
-import CermaicLamp from '../assets/VintageLamps/CermaicLamp.png';
-import FlowerLamp from '../assets/VintageLamps/FlowerLamp.png';
-import LavaLamp from '../assets/VintageLamps/LavaLamp.png';
-import MulticolorLamp from '../assets/VintageLamps/MulticolorLamp.png';
-import PatternLamp from '../assets/VintageLamps/PatternLamp.png';
-import RobotLamp from '../assets/VintageLamps/RobotLamp.png';
-
-
-const vintageLamps = [
-    { id: 1, name: 'Cermaic Lamp', price: '$16', tag: 'New', category: 'Lamp', color: null, img: CermaicLamp },
-    { id: 2, name: 'Flower Lamp', price: '$12', tag: 'Classic', category: 'Lamp', color: null, img: FlowerLamp },
-    { id: 3, name: 'Lava Lamp', price: '$14', tag: 'Limited', category: 'Lamp', color: null, img: LavaLamp },
-    { id: 4, name: 'Multicolor Lamp', price: '$18', tag: 'New Drop', category: 'Lamp', color: null, img: MulticolorLamp },
-    { id: 5, name: 'Pattern Lamp', price: '$12', tag: 'Just In', category: 'Lamp', color: null, img: PatternLamp },
-    { id: 6, name: 'Robot Lamp', price: '$21', tag: 'Exclusive', category: 'Lamp', color: null, img: RobotLamp },
-  ];
-
+import AllItems from '../ItemsApi/AllItems'; 
+const vintageLamps = AllItems.vintageLamps
 
   const Lamps = () => {
     return (
