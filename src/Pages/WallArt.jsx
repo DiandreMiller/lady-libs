@@ -1,25 +1,8 @@
 //Pages/WallArt.jsx
+import AllItems from '../ItemsApi/AllItems';
+const vintageWallArt = AllItems.vintageWallArt
 
-//Vintage WallArt
-import BlackMusic from '../assets/VintageWallArt/BlackMusic.png';
-import BlackWomanFlower from '../assets/VintageWallArt/BlackWomanFlower.png';
-import BlackWomenReading from '../assets/VintageWallArt/BlackWomenReading.png';
-import Cats from '../assets/VintageWallArt/Cats.png';
-import LibbyFlowerGirl from '../assets/VintageWallArt/LibbyFlowerGirl.png';
-import VintageBlackSwan from '../assets/VintageWallArt/VintageBlackSwan.png';
-
-
-const vintageWallArt = [
-    { id: 1, name: 'Black Music', price: '$66', tag: 'New', category: 'Wall Art', color: null, img: BlackMusic },
-    { id: 2, name: 'Black Woman Flower', price: '$62', tag: 'Classic', category: 'Wall Art', color: null, img: BlackWomanFlower },
-    { id: 3, name: 'Black Women Reading', price: '$61', tag: 'Limited', category: 'Wall Art', color: null, img: BlackWomenReading },
-    { id: 4, name: 'Cats', price: '$68', tag: 'New Drop', category: 'Wall Art', color: null, img: Cats },
-    { id: 5, name: 'Libby Flower Girl', price: '$62', tag: 'Just In', category: 'Wall Art', color: null, img: LibbyFlowerGirl },
-    { id: 6, name: 'Vintage Black Swan', price: '$71', tag: 'Exclusive', category: 'Wall Art', color: null, img: VintageBlackSwan },
-  ];
-
-
-  const WallArt  = () => {
+const WallArt  = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -92,5 +75,5 @@ const vintageWallArt = [
     );
   };
   
-  export default WallArt;
+export default WallArt;
   
