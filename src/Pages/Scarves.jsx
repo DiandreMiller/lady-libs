@@ -1,23 +1,6 @@
 //Pages/Scarves.jsx
-
-//Vintage Scarves
-import BlueReversableRaveScarf from '../assets/VintageScarfs/BlueReversableRaveScarf.png';
-import DarkGreenForestScarf from '../assets/VintageScarfs/DarkGreenForestScarf.png';
-import OrangeCashmireScarf from '../assets/VintageScarfs/OrangeCashmireScarf.png';
-import PlaidWinterScarf from '../assets/VintageScarfs/PlaidWinterScarf.png';
-import RedCottonScarf from '../assets/VintageScarfs/RedCottonScarf.png';
-import YellowChiffonRibbonScarf from '../assets/VintageScarfs/YellowChiffonRibbonScarf.png';
-
-
-const vintageScarfs = [
-    { id: 1, name: 'Blue Reversable Rave Scarf', price: '$32', tag: 'New', category: 'Scarf', color: 'Blue', img: BlueReversableRaveScarf },
-    { id: 2, name: 'Dark Green Forest Scarf', price: '$23', tag: 'Classic', category: 'Scarf', color: 'Dark Green', img: DarkGreenForestScarf },
-    { id: 3, name: 'Orange Cashmire Scarf', price: '$28', tag: 'Limited', category: 'Scarf', color: 'Orange', img: OrangeCashmireScarf },
-    { id: 4, name: 'Plaid Winter Scarf', price: '$35', tag: 'New Drop', category: 'Scarf Winter', color: 'Plaid', img: PlaidWinterScarf },
-    { id: 5, name: 'Red Cotton Scarf', price: '$25', tag: 'Just In', category: 'Scarf', color: 'Red', img: RedCottonScarf },
-    { id: 6, name: 'Yellow Chiffon Ribbon Scarf', price: '$41', tag: 'Exclusive', category: 'Scarf Chiffon', color: 'Yellow', img: YellowChiffonRibbonScarf },
-  ];
-
+import AllItems from '../ItemsApi/AllItems';
+const vintageScarfs = AllItems.vintageScarfs
 
   const Scarves = () => {
     return (
