@@ -1,25 +1,9 @@
 //Pages/Tops.jsx
-
-//Vintage Tops
-import BluePokadotTop from '../assets/VintageTops/BluePokadotTop.png';
-import CarnivalBrownTop from '../assets/VintageTops/CarnivalBrownTop.png';
-import PurpleRetroay2kTop from '../assets/VintageTops/PurpleRetroay2kTop.png';
-import VintageGoldenTop from '../assets/VintageTops/VintageGoldenTop.png';
-import WhiteRetroTop from '../assets/VintageTops/WhiteRetroTop.png';
-import Yellow1950BowTop from '../assets/VintageTops/Yellow1950BowTop.png';
+import AllItems from '../ItemsApi/AllItems';
+const vintageTops = AllItems.vintageTops
 
 
-const vintageTops = [
-    { id: 1, name: 'Blue Pokadot Top', price: '$25', tag: 'New', category: 'Tops', color: 'Blue', img: BluePokadotTop },
-    { id: 2, name: 'Carnival Brown Top', price: '$10', tag: 'Classic', category: 'Tops', color: 'Brown', img: CarnivalBrownTop },
-    { id: 3, name: 'Purple Retroa Y2K Top', price: '$23', tag: 'Limited', category: 'Tops', color: 'Purple', img: PurpleRetroay2kTop },
-    { id: 4, name: 'Vintage Golden Top', price: '$35', tag: 'New Drop', category: 'Tops', color: 'Golden', img: VintageGoldenTop },
-    { id: 5, name: 'White Retro Top', price: '$18', tag: 'Just In', category: 'Tops', color: 'White', img: WhiteRetroTop },
-    { id: 6, name: 'Yellow 1950 Bow Top', price: '$44', tag: 'Festive', category: 'Tops', color: 'Yellow', img: Yellow1950BowTop },
-  ];
-
-
-  const Tops = () => {
+const Tops = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -91,7 +75,7 @@ const vintageTops = [
         </div>
       </div>
     );
-  };
+};
   
-  export default Tops;
+export default Tops;
   
