@@ -1,6 +1,6 @@
 //Pages/WallArt.jsx
 import AllItems from '../ItemsApi/AllItems';
-const vintageWallArt = AllItems.vintageWallArt
+const vintageWallArt = AllItems.vintageWallArt;
 
 const WallArt  = () => {
     return (
@@ -73,7 +73,7 @@ const WallArt  = () => {
         </div>
       </div>
     );
-  };
+};
   
 export default WallArt;
   
