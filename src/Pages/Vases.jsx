@@ -1,25 +1,8 @@
 //Pages/Vases.jsx
+import AllItems from '../ItemsApi/AllItems';
+const vintageVases = AllItems.vintageVases;
 
-//Vintage Vases
-import BronzeRusticVase from '../assets/VintageVases/BronzeRusticVase.png';
-import GreenAndWhiteCeramicVase from '../assets/VintageVases/GreenAndWhiteCeramicVase.png';
-import NewspaperVase from '../assets/VintageVases/NewspaperVase.png';
-import OrangeJuiceVase from '../assets/VintageVases/OrangeJuiceVase.png';
-import RainbowGlassFlowerVase from '../assets/VintageVases/RainbowGlassFlowerVase.png';
-import WhiteAndBlueFlowerVase from '../assets/VintageVases/WhiteAndBlueFlowerVase.png';
-
-
-const vintageVases = [
-    { id: 1, name: 'Bronze Rustic Vase', price: '$32', tag: 'New', category: 'Vases', color: 'Bronze', img: BronzeRusticVase },
-    { id: 2, name: 'Green And White Ceramic Vase', price: '$23', tag: 'Classic', category: 'Vases', color: 'Green/ White', img: GreenAndWhiteCeramicVase },
-    { id: 3, name: 'Newspaper Vase', price: '$28', tag: 'Limited', category: 'Vases', color: 'Black/ White ', img: NewspaperVase },
-    { id: 4, name: 'Orange Juice Vase', price: '$35', tag: 'New Drop', category: 'Vases', color: 'Orange/ White', img: OrangeJuiceVase },
-    { id: 5, name: 'Rainbow Glass Flower Vase', price: '$25', tag: 'Just In', category: 'Vases', color: 'Rainbow', img: RainbowGlassFlowerVase },
-    { id: 6, name: 'White And Blue Flower Vase', price: '$41', tag: 'Exclusive', category: 'Vases', color: 'White/ Blue', img: WhiteAndBlueFlowerVase },
-  ];
-
-
-  const Vases = () => {
+const Vases = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -93,5 +76,5 @@ const vintageVases = [
     );
   };
   
-  export default Vases;
+export default Vases;
   
