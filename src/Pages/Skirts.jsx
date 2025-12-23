@@ -3,7 +3,7 @@ import AllItems from '../ItemsApi/AllItems';
 const shortSkirts = AllItems.shortSkirts;
 const longSkirts = AllItems.longSkirts;
 
-  const Skirts = () => {
+const Skirts = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
         {/* Glow Effects */}
@@ -123,7 +123,7 @@ const longSkirts = AllItems.longSkirts;
         </div>
       </div>
     );
-  };
+};
   
-  export default Skirts;
+export default Skirts;
   
