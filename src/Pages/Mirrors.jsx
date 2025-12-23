@@ -1,22 +1,6 @@
 //Pages/Mirrors.jsx
-
-//Vintage Mirrors
-import BlackArchMirror from '../assets/VintageMirrors/BlackArchMirror.png';
-import BronzeHandMirror from '../assets/VintageMirrors/BronzeHandMirror.png';
-import GoldenArchMirror from '../assets/VintageMirrors/GoldenArchMirror.png';
-import GoldenDeskMirror from '../assets/VintageMirrors/GoldenDeskMirror.png';
-import GoldenWallMirror from '../assets/VintageMirrors/GoldenWallMirror.png';
-import WideGoldenMirror from '../assets/VintageMirrors/WideGoldenMirror.png';
-
-
-const vintageMirrors = [
-    { id: 1, name: 'Black Arch Mirror', price: '$34', tag: 'New', category: 'Mirror', color: 'Black', img: BlackArchMirror },
-    { id: 2, name: 'Bronze Hand Mirror', price: '$25', tag: 'Classic', category: 'Mirror', color: 'Bronze', img: BronzeHandMirror },
-    { id: 3, name: 'Golden Arch Mirror', price: '$30', tag: 'Limited', category: 'Mirror', color: 'Gold', img: GoldenArchMirror },
-    { id: 4, name: 'Golden Desk Mirror', price: '$37', tag: 'New Drop', category: 'Mirror', color: 'Gold', img: GoldenDeskMirror },
-    { id: 5, name: 'Golden Wall Mirror', price: '$27', tag: 'Just In', category: 'Mirror', color: 'Gold', img: GoldenWallMirror },
-    { id: 6, name: 'Wide Golden Mirror', price: '$43', tag: 'Exclusive', category: 'Mirror', color: 'Gold', img: WideGoldenMirror },
-  ];
+import AllItems from '../ItemsApi/AllItems'; 
+const vintageMirrors = AllItems.vintageMirrors;
 
 
   const Mirrors = () => {
