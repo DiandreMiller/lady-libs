@@ -1,66 +1,8 @@
 //Pages/Skirts
+import AllItems from '../ItemsApi/AllItems';
+const shortSkirts = AllItems.shortSkirts;
+const longSkirts = AllItems.longSkirts;
 
-//short skirts
-import ShortAfricanBlueGreenSkirt from '../assets/VintageShortSkirts/ShortAfricanBlueGreenSkirt.png';
-import ShortAfricanFittedSkirt from '../assets/VintageShortSkirts/ShortAfricanFittedSkirt.png';
-import ShortAfricanGreenBlueCirclesSkirt from '../assets/VintageShortSkirts/ShortAfricanGreenBlueCirclesSkirt.png';
-import ShortAfricanOrangeRedGreenSkirt from '../assets/VintageShortSkirts/ShortAfricanOrangeRegGreenSkirt.png';
-import ShortAfricanOrangeSkirt from '../assets/VintageShortSkirts/ShortAfricanOrangeSkirt.png';
-import ShortAfricanPinkOrangeGreenSkirt from '../assets/VintageShortSkirts/ShortAfricanPinkOrangeGreenSkirt.png';
-import ShortBlackSkirt from '../assets/VintageShortSkirts/ShortBlackSkirt.png';
-import ShortBlueJeansSkirt from '../assets/VintageShortSkirts/ShortBlueJeansSkirt.png';
-import ShortBrownSkirt from '../assets/VintageShortSkirts/ShortBrownSkirt.png';
-import ShortPlaidYellowSkirt from '../assets/VintageShortSkirts/ShortPlaidYellowSkirt.png';
-import ShortRedSkirt from '../assets/VintageShortSkirts/ShortRedSkirt.png';
-import ShortWhiteSkirt from '../assets/VintageShortSkirts/ShortWhiteSkirt.png';
-
-//long skirts
-import AfricanBlueTreeDress from '../assets/VintageLongSkirt/AfricanBlueTreeDress.png';
-import AfricanDressYellowGreenBlue from '../assets/VintageLongSkirt/AfricanDressYellowGreenBlue.png';
-import AfricanFlowerFlowySkirt from '../assets/VintageLongSkirt/AfricanFlowerFlowySkirt.png';
-import AfricanSkirtRedAndBlue from '../assets/VintageLongSkirt/AfricanSkirtRedAndBlue.png';
-import AfricanSkirtRedAndYellow from '../assets/VintageLongSkirt/AfricanSkirtRedAndYellow.png';
-import AfricanSkirtYellowBluePurple from '../assets/VintageLongSkirt/AfricanSkirtYellowBluePurple.png';
-import PinkPokadotSkirt from '../assets/VintageLongSkirt/PinkPokadotSkirt.png';
-import RosesSkirt from '../assets/VintageLongSkirt/RosesSkirt.png';
-import StripeSkirt from '../assets/VintageLongSkirt/StripeSkirt.png';
-import SunflowerSkirt from '../assets/VintageLongSkirt/SunflowerSkirt.png';
-import WhitePokadotSkirt from '../assets/VintageLongSkirt/WhitePokadotSkirt.png';
-import YellowSkirt from '../assets/VintageLongSkirt/YellowSkirt.png';
-
-
-/* --- Inventory Data --- */
-const shortSkirts = [
-    { id: 1, name: 'Blue/Green African Print Skirt', price: '$45', tag: 'New', category: 'African Short | Blue/Green', color: 'Blue/Green', img: ShortAfricanBlueGreenSkirt },
-    { id: 2, name: 'Fitted African Skirt', price: '$40', tag: 'Classic', category: 'African Short | Multi', color: 'Multi', img: ShortAfricanFittedSkirt },
-    { id: 3, name: 'Green/Blue Circle Skirt', price: '$42', tag: 'Limited', category: 'African Short | Green/Blue', color: 'Green/Blue', img: ShortAfricanGreenBlueCirclesSkirt },
-    { id: 4, name: 'Orange/Red/Green African Skirt', price: '$46', tag: 'New Drop', category: 'African Short | Orange/Red/Green', color: 'Orange/Red/Green', img: ShortAfricanOrangeRedGreenSkirt },
-    { id: 5, name: 'Orange African Skirt', price: '$38', tag: 'Just In', category: 'African Short | Orange', color: 'Orange', img: ShortAfricanOrangeSkirt },
-    { id: 6, name: 'Pink/Orange/Green African Skirt', price: '$44', tag: 'Bright', category: 'African Short | Pink/Orange/Green', color: 'Pink/Orange/Green', img: ShortAfricanPinkOrangeGreenSkirt },
-    { id: 7, name: 'Black Classic Skirt', price: '$32', tag: 'Classic', category: 'Short | Black', color: 'Black', img: ShortBlackSkirt },
-    { id: 8, name: 'Blue Jeans Skirt', price: '$35', tag: 'Denim', category: 'Short | Denim', color: 'Denim Blue', img: ShortBlueJeansSkirt },
-    { id: 9, name: 'Brown Short Skirt', price: '$34', tag: 'Neutral', category: 'Short | Brown', color: 'Brown', img: ShortBrownSkirt },
-    { id: 10, name: 'Plaid Yellow Skirt', price: '$30', tag: 'Plaid', category: 'Short | Yellow Plaid', color: 'Yellow', img: ShortPlaidYellowSkirt },
-    { id: 11, name: 'Red Short Skirt', price: '$33', tag: 'Bold', category: 'Short | Red', color: 'Red', img: ShortRedSkirt },
-    { id: 12, name: 'White Short Skirt', price: '$28', tag: 'Classic', category: 'Short | White', color: 'White', img: ShortWhiteSkirt },
-  ];
-  
-  const longSkirts = [
-    { id: 1, name: 'Blue African Tree Print Skirt', price: '$55', tag: 'New', category: 'African Long | Blue', color: 'Blue', img: AfricanBlueTreeDress },
-    { id: 2, name: 'Yellow/Green/Blue African Dress Skirt', price: '$58', tag: 'Vibrant', category: 'African Long | Yellow/Green/Blue', color: 'Multi', img: AfricanDressYellowGreenBlue },
-    { id: 3, name: 'Floral African Flowy Skirt', price: '$60', tag: 'Flowy', category: 'African Long | Floral', color: 'Multi', img: AfricanFlowerFlowySkirt },
-    { id: 4, name: 'Red/Blue African Skirt', price: '$52', tag: 'Limited', category: 'African Long | Red/Blue', color: 'Red/Blue', img: AfricanSkirtRedAndBlue },
-    { id: 5, name: 'Red/Yellow African Skirt', price: '$50', tag: 'Bright', category: 'African Long | Red/Yellow', color: 'Red/Yellow', img: AfricanSkirtRedAndYellow },
-    { id: 6, name: 'Yellow/Blue/Purple African Skirt', price: '$56', tag: 'Vibrant', category: 'African Long | Yellow/Blue/Purple', color: 'Multi', img: AfricanSkirtYellowBluePurple },
-    { id: 7, name: 'Pink Polkadot Skirt', price: '$42', tag: 'Soft', category: 'Long | Pink', color: 'Pink', img: PinkPokadotSkirt },
-    { id: 8, name: 'Roses Print Skirt', price: '$48', tag: 'Floral', category: 'Long | Floral', color: 'Red/Pink', img: RosesSkirt },
-    { id: 9, name: 'Stripe Pattern Skirt', price: '$40', tag: 'Striped', category: 'Long | Stripe', color: 'Multi', img: StripeSkirt },
-    { id: 10, name: 'Sunflower Skirt', price: '$45', tag: 'Bright', category: 'Long | Yellow', color: 'Yellow', img: SunflowerSkirt },
-    { id: 11, name: 'White Polkadot Skirt', price: '$38', tag: 'Classic', category: 'Long | White', color: 'White', img: WhitePokadotSkirt },
-    { id: 12, name: 'Yellow Long Skirt', price: '$37', tag: 'Soft', category: 'Long | Yellow', color: 'Yellow', img: YellowSkirt },
-  ];
-  
-  /* --- Component --- */
   const Skirts = () => {
     return (
       <div className="min-h-screen bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-slate-50 pb-20">
