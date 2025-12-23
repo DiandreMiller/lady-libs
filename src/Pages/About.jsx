@@ -83,7 +83,7 @@ const About = () => {
                   Shop Lady Libs
                 </a>
                 <a
-                  href="/contactus"
+                  href="/contactme"
                   className="rounded-full border border-yellow-100/75 bg-transparent px-6 py-2.5 text-sm font-semibold text-yellow-50 hover:bg-purple-900/70 transition"
                 >
                   Ask me about a piece
