@@ -1,50 +1,9 @@
 //Pages/Jewlery.jsx
-
-//Vintage Earrings
-import GoldenHoopEarrings from '../assets/VintageJewlery/GoldenHoopEarrings.png';
-import RoundEarringsWoodenLeatherEarrings from '../assets/VintageJewlery/RoundEarringsWoodenLeatherEarrings.png';
-import BronzeOpalEarrings from '../assets/VintageJewlery/OpalEarrings.png';
-
-//Vintage Necklaces
-import GoldCloverNecklace from '../assets/VintageJewlery/GoldCloverNecklace.png';
-import TurquoiseRhinestoneHandmadeWovenRopeNecklace from '../assets/VintageJewlery/TurquoiseRhinestoneHandmadeWovenRopeNecklace.png';
-import SunMoonNecklace from '../assets/VintageJewlery/SunMoonNecklace.png';
-
-//Vintage Rings
-import BrownLeafRing from '../assets/VintageJewlery/BrownLeafRing.png';
-import ButteryflyRing from '../assets/VintageJewlery/ButteryflyRing.png';
-import GoldenPromiseRing from '../assets/VintageJewlery/GoldenPromiseRing.png';
-
-//Bracelets
-import GoldenFashion14KBracelet from '../assets/VintageJewlery/GoldenFashion14KBracelet.png';
-import GoldenGemstoneBraclet from '../assets/VintageJewlery/GoldenGemstoneBraclet.png';
-import WhiteBluePearlBracelet from '../assets/VintageJewlery/WhiteBluePearlBracelet.png';
-
-
-const vintageEarring = [
-    { id: 1, name: 'Golden Hoop Earrings', price: '$250', tag: 'New', category: 'Jewelery/Earrings', color: 'Gold', img: GoldenHoopEarrings },
-    { id: 2, name: 'Round Earrings Wooden Leather Earrings', price: '$35', tag: 'Classic', category: 'Jewlery/Wooden', color: 'Brown', img: RoundEarringsWoodenLeatherEarrings },
-    { id: 3, name: 'Bronze Opal Earrings', price: '$13', tag: 'Limited', category: 'Jewlery/Bronze', color: 'Bronze', img: BronzeOpalEarrings },
-  ];
-
-const vintageNeckless = [
-    { id: 1, name: 'Gold Clover Necklace', price: '$25', tag: 'New', category: 'Jewelery/Neckless', color: 'Gold, Green, Red, Yellow', img: GoldCloverNecklace },
-    { id: 2, name: 'Turquoise Rhinestone Necklace', price: '$40', tag: 'Classic', category: 'Jewlery/Neckless', color: 'Turquoise', img: TurquoiseRhinestoneHandmadeWovenRopeNecklace },
-    { id: 3, name: 'Sun Moon Necklace', price: '$25', tag: 'Limited', category: 'Jewlery/Neckless', color: 'Silver', img: SunMoonNecklace },
-  ];
-
-const vintageRings = [
-    { id: 1, name: 'Brown Leaf Ring', price: '$27', tag: 'New', category: 'Jewelery/Ring', color: 'Brown', img: BrownLeafRing },
-    { id: 2, name: 'Butteryfly Ring', price: '$38', tag: 'Classic', category: 'Jewlery/Ring', color: 'Silver', img: ButteryflyRing },
-    { id: 3, name: 'Golden Promise Ring', price: '$29', tag: 'Limited', category: 'Jewlery/Ring', color: 'Gold', img: GoldenPromiseRing },
-];
-
-const vintageBracelets = [
-    { id: 1, name: 'Golden Fashion 14K Gold Bracelet', price: '$201', tag: 'New', category: 'Jewlery/Bracelet', color: 'Gold', img: GoldenFashion14KBracelet },
-    { id: 2, name: 'Golden Gemstone Braclet', price: '$34', tag: 'Classic', category: 'Jewlery/Bracelet', color: 'Gold', img: GoldenGemstoneBraclet },
-    { id: 3, name: 'White Blue Pearl Bracelet', price: '$27', tag: 'Limited', category: 'Jewlery/Bracelet', color: 'White/ Blue', img: WhiteBluePearlBracelet },
-];
-
+import AllItems from '../ItemsApi/AllItems'; 
+const vintageEarring = AllItems.vintageEarring;
+const vintageNeckless = AllItems.vintageNeckless;
+const vintageRings = AllItems.vintageRings;
+const vintageBracelets = AllItems.vintageBracelets
 
 
   const Jewlery = () => {
