@@ -1,4 +1,3 @@
-
 //Vintage Bags
 import BlackVintageBag from '../assets/VintageBags/BlackVintageBag.png';
 import BurgandyBag from '../assets/VintageBags/BurgandyBag.png';
@@ -400,4 +399,4 @@ const vintageWallArt = [
     vintageJackets, vintageEarring, vintageNeckless, vintageRings, vintageBracelets,
     vintageLamps, vintageMirrors, businessPants, jeans, leggings, sweatpants, vintageScarfs,
     shortSkirts, longSkirts, vintageSweaters, vintageTops, vintageVases, vintageWallArt
-  }
+  };
