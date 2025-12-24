@@ -1,3 +1,4 @@
+//Commons/Navbar.jsx
 import { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ShoppingCart } from "lucide-react";
