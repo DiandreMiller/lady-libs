@@ -1,3 +1,4 @@
+//Commons/Footer.jsx
 import { useState, useEffect } from "react";
 // import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
