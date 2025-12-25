@@ -1,6 +1,5 @@
+//context/CartContext.jsx
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-
-
 
 const STORAGE_KEY = "cart:v2";
 const CartContext = createContext(null);
