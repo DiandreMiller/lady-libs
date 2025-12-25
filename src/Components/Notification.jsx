@@ -39,7 +39,7 @@ const Notification = () => {
         {videoEnded && (
           <div className="space-y-3">
             <p className="text-lg text-yellow-100">
-              Check back December 29th, 2026 ✨
+              Check back December 29th, 2025 ✨
             </p>
 
             <button
