@@ -1,3 +1,4 @@
+//ComponentsAddPhoto.jsx
 const AddPhoto = () => {
   return (
     <div>AddPhoto</div>
