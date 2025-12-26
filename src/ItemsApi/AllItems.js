@@ -1,3 +1,5 @@
+//ItemsApi/AllItems.js
+
 //Vintage Bags
 import BlackVintageBag from '../assets/VintageBags/BlackVintageBag.png';
 import BurgandyBag from '../assets/VintageBags/BurgandyBag.png';
