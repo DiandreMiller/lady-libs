@@ -2,7 +2,7 @@
 import { BrowserRouter, Routes, Route, useLocation, Navigate } from "react-router-dom";
 import "./App.css";
 
-// pages
+// Pages
 import Dresses from "./Pages/Dresses.jsx";
 import Home from "./Pages/Home.jsx";
 import Bags from "./Pages/Bags.jsx";
