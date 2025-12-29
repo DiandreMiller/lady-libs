@@ -31,7 +31,7 @@ import WallArt from "./Pages/WallArt.jsx";
 
 // Talk with libby about what the site will be about
 
-// commons
+// Commons
 import Navbar from "./Commons/Navbar";
 // import Footer from "./Commons/Footer"; 
 
