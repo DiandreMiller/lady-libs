@@ -31,6 +31,7 @@ import WallArt from "./Pages/WallArt.jsx";
 
 // Talk with libby about what the site will be about
 // Show libby Clark video before midnight 12/29
+// After talking to Libby, figure out backend structure 
 
 // Commons
 import Navbar from "./Commons/Navbar";
