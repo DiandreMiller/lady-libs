@@ -30,9 +30,9 @@ import WallArt from "./Pages/WallArt.jsx";
 //TODO:
 
 // Talk with libby about what the site will be about
-// Show libby Clark video before midnight 12/29
 // After talking to Libby, figure out backend structure 
 // Create a page so libby can upload here own images
+
 
 // Commons
 import Navbar from "./Commons/Navbar";
