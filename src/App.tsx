@@ -29,6 +29,7 @@ import WallArt from "./Pages/WallArt.jsx";
 
 //TODO:
 
+// Talk with libby about what the site will be about
 
 // commons
 import Navbar from "./Commons/Navbar";
