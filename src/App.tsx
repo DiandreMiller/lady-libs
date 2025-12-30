@@ -32,6 +32,7 @@ import WallArt from "./Pages/WallArt.jsx";
 // Talk with libby about what the site will be about
 // After talking to Libby, figure out backend structure 
 // Create a page so libby can upload here own images
+// Pink background
 
 
 // Commons
