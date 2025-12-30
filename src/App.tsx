@@ -14,11 +14,11 @@ import FourOFour from './Pages/FourOFour.jsx';
 import Cart from "./Pages/Cart.jsx";
 import ContactMe from "./Pages/ContactMe.jsx";
 import EmailSent from "./Pages/EmailSent.jsx";
-import Pants from './Pages/Pants.jsx'
+import Pants from './Pages/Pants.jsx';
 import Hats from "./Pages/Hats.jsx";
 import Lamps from "./Pages/Lamp.jsx";
 import Mirrors from "./Pages/Mirrors.jsx";
-import PrivacyPolicy from './Pages/Legal.jsx'
+import PrivacyPolicy from './Pages/Legal.jsx';
 import Scarves from "./Pages/Scarves.jsx";
 import Skirts from "./Pages/Skirts.jsx";
 import Sweaters from "./Pages/Sweaters.jsx";
