@@ -68,3 +68,5 @@ export default tseslint.config([
 ])
 ```
 # lady-libs
+
+Will have a pink theme
