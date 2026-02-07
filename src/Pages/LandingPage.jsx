@@ -5,7 +5,7 @@ import NotificationNumberTwo from '../Components/NotificationNumberTwo';
 
 const LandingPage = () => {
     return (
-      <div className="min-h-screen w-full bg-gradient-to-b from-purple-900 via-orange-600 to-yellow-300 text-yellow-50 mt-12">
+      <div className="min-h-screen w-full bg-gradient-to-b from-pink-600 via-orange-400 to-yellow-200 text-yellow-50 mt-12">
         {/* Background glow layers */}
         <div className="pointer-events-none fixed inset-0 opacity-40 mix-blend-screen">
           <div className="absolute -top-32 -left-24 h-80 w-80 rounded-full bg-orange-400 blur-3xl" />
