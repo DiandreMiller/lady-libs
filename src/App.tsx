@@ -34,7 +34,6 @@ import WallArt from "./Pages/WallArt.jsx";
 // Create a page so libby can upload here own images
 // Pink background.
 
-
 // Commons
 import Navbar from "./Commons/Navbar";
 // import Footer from "./Commons/Footer"; 
