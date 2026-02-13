@@ -32,7 +32,7 @@ import WallArt from "./Pages/WallArt.jsx";
 // Talk with libby about what the site will be about
 // After talking to Libby, figure out backend structure 
 // Create a page so libby can upload here own images
-// Pink background
+// Pink background.
 
 // Commons
 import Navbar from "./Commons/Navbar";
@@ -44,7 +44,7 @@ import { CartProvider } from "./context/CartContext";
 import { DefaultLayout, BareLayout } from "./Components/Layout";
 import Tops from "./Pages/Tops.jsx";
 
-
+// redirect
 function AliasRouter() {
   const { pathname } = useLocation();
 
