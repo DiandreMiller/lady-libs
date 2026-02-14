@@ -3,6 +3,8 @@ import AllVintageItems from '../assets/LandingPageVintageItems/AllVintageItems.p
 import Notification from "../Components/Notification";
 import NotificationNumberTwo from '../Components/NotificationNumberTwo';
 
+//Happy Valentines Day
+
 const LandingPage = () => {
     return (
       <div className="min-h-screen w-full bg-gradient-to-b from-pink-600 via-orange-400 to-yellow-200 text-yellow-50 mt-12">
