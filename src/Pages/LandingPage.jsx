@@ -3,7 +3,7 @@ import AllVintageItems from '../assets/LandingPageVintageItems/AllVintageItems.p
 import Notification from "../Components/Notification";
 import NotificationNumberTwo from '../Components/NotificationNumberTwo';
 
-//Happy Valentines Day
+
 
 const LandingPage = () => {
     return (
