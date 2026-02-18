@@ -30,7 +30,7 @@ import WallArt from "./Pages/WallArt.jsx";
 //TODO:
 
 // Talk with libby about what the site will be about
-// After talking to Libby, figure out backend structure 
+// After talking to Libby, figure out backend structure.
 // Create a page so libby can upload here own images
 
 
