@@ -33,7 +33,7 @@ import WallArt from "./Pages/WallArt.jsx";
 // After talking to Libby, figure out backend structure.
 // Create a page so libby can upload here own images
 // Talk about structure
-// Ask her about colors for the owners page
+// Ask her about colors for the owners page.
 
 
 // Commons
