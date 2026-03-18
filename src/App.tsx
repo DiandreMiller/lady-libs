@@ -34,7 +34,7 @@ import WallArt from "./Pages/WallArt.jsx";
 // Create a page so libby can upload here own images
 // Talk about structure
 // Ask her about colors for the owners page.
-// Figure out what items she would like and categories...
+// Figure out what items she would like and categories
 
 
 // Commons
